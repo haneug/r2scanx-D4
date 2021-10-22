@@ -1,9 +1,9 @@
-# r²SCAN-D4
+# r²SCANX-D4
 
 
 ## Functional Implementation
 
-- r²SCAN-D4 is available in Turbomole 7.5.1 using the `r2scan` functional in the dft data group and the disp4 data group
+- r²SCANX-D4 is available in Orca
 ```
 $disp4
 $dft
@@ -20,18 +20,21 @@ $dft
 
 | method | s6 | s8 | s9 | a1 | a2/Bohr |
 | --- | --- | --- | --- | --- | --- |
-| r²SCAN-D4(EEQ)-ATM | 1 | 0.60187490 | 1 | 0.51559235 | 5.77342911 |
-| r²SCAN-D3(BJ)-ATM | 1 | 0.78981345 | 1 | 0.49484001 | 5.73083694 |
-| rSCAN-D4(EEQ)-ATM | 1 | 0.87728975 | 1 | 0.49116966 | 5.75859346 |
-| rSCAN-D3(BJ)-ATM | 1 | 1.08859014 | 1 | 0.47023427 | 5.73408312 |
+| r²SCANh-D4(EEQ)-ATM/def2-QZVP | 1 | 0.8324 | 1 | 0.4944 | 5.9019|
+| r²SCAN0-D4(EEQ)-ATM/def2-QZVP | 1 | 0.8992 | 1 | 0.4778 | 5.8779 |
+| r²SCAN50-D4(EEQ)-ATM/def2-QZVP | 1 | 1.0471 | 1 | 0.4574 | 5.8969 |
+
+
+
+
 
 | method | b |
 | --- | --- |
-| r²SCAN-VV10 | 12.3 |
-| rSCAN-VV10 | 10.8 |
+| r²SCAN-VV10 | - |
+| rSCAN-VV10 | - |
 
 
-## Benchmark Results
+## Benchmark Results ToDO
 
 ### NCIBLIND
 
