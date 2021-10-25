@@ -4,12 +4,6 @@
 ## Functional Implementation
 
 - r²SCANX-D4 is available in Orca
-```
-$disp4
-$dft
-  functional r2scan
-```
-
 - r²SCAN can be used with [libxc version 5.1.0](https://www.tddft.org/programs/libxc/changes/#510---2021-01-19) as `MGGA_X_R2SCAN` (id=497), `MGGA_C_R2SCAN` (id=498)
 - [XCFun 2.1.0](https://github.com/dftlibs/xcfun/releases/tag/v2.1.0) also implements support for the r²SCAN functional
 - routines for r²SCAN functional implementation can be found at https://gitlab.com/dhamil/r2scan-subroutines (Fortran), routines for Vasp are included
@@ -23,9 +17,9 @@ $dft
 | r²SCANh-D4(EEQ)-ATM/def2-QZVP | 1 | 0.8324 | 1 | 0.4944 | 5.9019|
 | r²SCAN0-D4(EEQ)-ATM/def2-QZVP | 1 | 0.8992 | 1 | 0.4778 | 5.8779 |
 | r²SCAN50-D4(EEQ)-ATM/def2-QZVP | 1 | 1.0471 | 1 | 0.4574 | 5.8969 |
-
-
-
+| r²SCANh-D4(EEQ)-ATM/def2-TZVPP | 1 | 0.91194666 | 1 | 0.4832250 | 6.2072805 |
+| r²SCAN0-D4(EEQ)-ATM/def2-TZVPP | 1 | 0.9396913 | 1 | 0.4578425 | 6.1864385 |
+| r²SCAN50-D4(EEQ)-ATM/def2-TZVPP | 1 | 1.0576252 | 1 | 0.4232319 | 6.2378061 |
 
 
 | method | b |
