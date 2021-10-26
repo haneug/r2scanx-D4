@@ -37,11 +37,10 @@ Statistics in kcal/mol, Gini coefficients are dimensionless.
 | method | MD | MAD | RMSD | SD | Gini |
 | --- | ---:| ---:| ---:| ---:| ---: |
 | r²SCAN-D4-ATM/def2-QZVP | –0.05 | 0.17 | 0.29 | 0.29 | 0.64 |
-| r²SCAN-D3(BJ)-ATM/def2-QZVP | –0.05 | 0.18 | 0.31 | 0.31 | 0.65 |
-| r²SCAN-VV10/def2-QZVP | –0.09 | 0.17 | 0.31 | 0.30 | 0.65 |
-| rSCAN-D4-ATM/def2-QZVP | –0.06 | 0.16 | 0.30 | 0.30 | 0.67 |
-| rSCAN-D3(BJ)-ATM/def2-QZVP | –0.06 | 0.17 | 0.32 | 0.32 | 0.68 |
-| rSCAN-VV10/def2-QZVP | –0.13 | 0.20 | 0.38 | 0.36 | 0.70 |
+| r²SCANh-D4-ATM/def2-QZVP | -0.059 | 0.179 | 0.316 | 0.313 | |
+| r²SCAN0-D4-ATM/def2-QZVP | -0.071 | 0.200 | 0.357 | 0.353 | |
+| r²SCAN50-D4-ATM/def2-QZVP | -0.102 | 0.256 | 0.460 | 0.451 | |
+
 
 ### S22x5 ToDO
 
@@ -50,11 +49,9 @@ Statistics in kcal/mol, Gini coefficients are dimensionless.
 | method | MD | MAD | RMSD | SD | Gini |
 | --- | ---:| ---:| ---:| ---:| ---: |
 | r²SCAN-D4-ATM/def2-QZVP | –0.12 | 0.28 | 0.51 | 0.50 | 0.65 |
-| r²SCAN-D3(BJ)-ATM/def2-QZVP | –0.12 | 0.29 | 0.53 | 0.52 | 0.65 |
-| r²SCAN-VV10/def2-QZVP | –0.07 | 0.32 | 0.56 | 0.56 | 0.61 |
-| rSCAN-D4-ATM/def2-QZVP | –0.13 | 0.30 | 0.57 | 0.56 | 0.67 |
-| rSCAN-D3(BJ)-ATM/def2-QZVP | –0.12 | 0.31 | 0.59 | 0.58 | 0.69 |
-| rSCAN-VV10/def2-QZVP | –0.11 | 0.35 | 0.65 | 0.64 | 0.66 |
+| r²SCANh | -0.155 | 0.303 | 0.565 | 0.546 | |
+| r²SCAN0 | -0.199 | 0.353 | 0.658 | 0.630 | |
+| r²SCAN50 | -0.282 | 0.466 | 0.859 | 0.815 | |
 
 ### S66x8 ToDO
 
@@ -63,11 +60,9 @@ Statistics in kcal/mol, Gini coefficients are dimensionless.
 | method | MD | MAD | RMSD | SD | Gini |
 | --- | ---:| ---:| ---:| ---:| ---: |
 | r²SCAN-D4-ATM/def2-QZVP | –0.09 | 0.23 | 0.38 | 0.36 | 0.56 |
-| r²SCAN-D3(BJ)-ATM/def2-QZVP | –0.11 | 0.23 | 0.38 | 0.37 | 0.58 |
-| r²SCAN-VV10/def2-QZVP | –0.05 | 0.28 | 0.43 | 0.43 | 0.54 |
-| rSCAN-D4-ATM/def2-QZVP | –0.10 | 0.23 | 0.41 | 0.40 | 0.59 |
-| rSCAN-D3(BJ)-ATM/def2-QZVP | –0.13 | 0.24 | 0.42 | 0.40 | 0.60 |
-| rSCAN-VV10/def2-QZVP | –0.10 | 0.29 | 0.49 | 0.48 | 0.57 |
+| r²SCANh | -0.112 | 0.244 | 0.406 | 0.391 | |
+| r²SCAN0 | -0.133 | 0.274 | 0.463 | 0.444 | |
+| r²SCAN50 | -0.180 | 0.352 | 0.600 | 0.573 | |
 
 
 ### GMTKN55
