@@ -43,7 +43,7 @@ Statistics in kcal/mol, Gini coefficients are dimensionless.
 | rSCAN-D3(BJ)-ATM/def2-QZVP | –0.06 | 0.17 | 0.32 | 0.32 | 0.68 |
 | rSCAN-VV10/def2-QZVP | –0.13 | 0.20 | 0.38 | 0.36 | 0.70 |
 
-### S22x5
+### S22x5 ToDO
 
 Statistics in kcal/mol, Gini coefficients are dimensionless.
 
@@ -56,7 +56,7 @@ Statistics in kcal/mol, Gini coefficients are dimensionless.
 | rSCAN-D3(BJ)-ATM/def2-QZVP | –0.12 | 0.31 | 0.59 | 0.58 | 0.69 |
 | rSCAN-VV10/def2-QZVP | –0.11 | 0.35 | 0.65 | 0.64 | 0.66 |
 
-### S66x8
+### S66x8 ToDO
 
 Statistics in kcal/mol, Gini coefficients are dimensionless.
 
@@ -90,7 +90,7 @@ Statistics in kcal/mol.
 | r²SCAN50-D4/def2-QZVP  | 3.81 | 4.40 | 4.86 | 3.10 | 3.22 | 2.91 | 3.09 |
 
 The MADs of all GMTKN55 subsets in kcal/mol are given here.
-Values for TPSS-D4, PBE-D4 and PBE0-D4 are taken from Caldeweyher et al. *J. Chem Phys*, **2019**, 150, 154122. DOI: [10.1063/1.5090222](https://doi.org/10.1063/1.5090222).
+Values for TPSS-D4, PBE-D4 and PBE0-D4 are taken from Caldeweyher et al. *J. Chem Phys*, **2019**, 150, 154122. DOI: [10.1063/1.5090222](https://doi.org/10.1063/1.5090222). Values for r²SCAN-D4 are taken from Ehlert et al. *J. Chem. Phys.* **2021**, 154, 061101. DOI: [10.1063/5.0041008](https://doi.org/10.1063/5.0041008)
 
 | subset | r²SCAN-D4 | r²SCANh-D4 | r²SCAN0-D4 | r²SCAN50-D4  | TPSS-D4 | PBE-D4 | PBE0-D4 | 
 | --- | ---:| ---:| ----:| ---:| ---:| ---:| ---:|
@@ -162,7 +162,13 @@ Statistics in kcal/mol.
 | rSCAN/def2-QZVP | 2.24 | 4.66 | 6.24 | 5.90 |
 | rSCAN-D4-ATM/def2-QZVP | –0.49 | 3.22 | 4.36 | 4.38 |
 
-### L7
+### ROST61 ToDO
+Statistics in kcal/mol.
+| method | MD | MAD | RMSD | SD |
+| --- | ---:| ---:| ---:| ---:|
+
+
+### L7 ToDO
 
 Statistics in kcal/mol.
 
@@ -175,7 +181,7 @@ Statistics in kcal/mol.
 | SCAN/def2-QZVP | 8.02 | 8.02 | 9.07 | 4.54 |
 | SCAN-D4-ATM/def2-QZVP | 1.13 | 1.29 | 1.59 | 1.21 |
 
-### S30L
+### S30L ToDO
 
 Statistics in kcal/mol.
 
@@ -186,7 +192,7 @@ Statistics in kcal/mol.
 | rSCAN/def2-QZVP | 14.63 | 14.63 | 17.41 | 9.61 |
 | rSCAN-D4-ATM/def2-QZVP | –2.04 | 2.09 | 2.75 | 1.89 |
 
-### X40x10
+### X40x10 ToDO
 
 Statistics in kcal/mol.
 
@@ -200,7 +206,7 @@ Statistics in kcal/mol.
 | TPSS-D4-ATM/def2-QZVP | –0.20 | 0.38 | 0.61 | 0.57 |
 | PBE-D4-ATM/def2-QZVP | –0.45 | 0.48 | 0.80 | 0.72 |
 
-### LMGB35
+### LMGB35 ToDO
 
 Statistics in pm.
 
@@ -208,7 +214,7 @@ Statistics in pm.
 | --- | ---:| ---:| ---:| ---:|
 | r²SCAN-D4-ATM/def2-QZVP | –0.12 | 0.68 | 1.01 | 1.02 |
 
-### HMGB11
+### HMGB11 ToDO
 
 Statistics in pm.
 
@@ -216,7 +222,7 @@ Statistics in pm.
 | --- | ---:| ---:| ---:| ---:|
 | r²SCAN-D4-ATM/def2-QZVP | 0.51 | 1.17 | 1.34 | 1.29 |
 
-### TMC32
+### TMC32 ToDO
 
 Statistics in pm.
 
@@ -224,7 +230,7 @@ Statistics in pm.
 | --- | ---:| ---:| ---:| ---:|
 | r²SCAN-D4-ATM/def2-QZVP | –1.57 | 1.89 | 2.35 | 1.77 |
 
-### ROT34
+### ROT34 ToDO
 
 Statistics in MHz.
 
@@ -232,7 +238,7 @@ Statistics in MHz.
 | --- | ---:| ---:| ---:| ---:|
 | r²SCAN-D4-ATM/def2-QZVP | –3.22 | 4.64 | 5.88 | 4.99 |
 
-### LB12
+### LB12 ToDO
 
 Statistics in pm.
 
@@ -240,7 +246,7 @@ Statistics in pm.
 | --- | ---:| ---:| ---:| ---:|
 | r²SCAN-D4-ATM/def2-QZVP | 1.81 | 3.57 | 5.67 | 5.61 |
 
-### CCse21
+### CCse21 ToDO
 
 Bond lengths. Statistics in pm.
 
