@@ -93,7 +93,7 @@ The MADs of all GMTKN55 subsets in kcal/mol are given here.
 Values for TPSS-D4, PBE-D4 and PBE0-D4 are taken from Caldeweyher et al. *J. Chem Phys*, **2019**, 150, 154122. DOI: [10.1063/1.5090222](https://doi.org/10.1063/1.5090222).
 
 | subset | r²SCAN-D4 | r²SCANh-D4 | r²SCAN0-D4 | r²SCAN50-D4  | TPSS-D4 | PBE-D4 | PBE0-D4 | 
-| --- | ---:| ---:| ----:| ---:| ---:| ---:|
+| --- | ---:| ---:| ----:| ---:| ---:| ---:| ---:|
 | W4-11 | 3.86 | 4.58 | 11.35 | 22.62 | 5.89 | 15.62 | 3.67 | 
 | G21EA | 5.64 | 3.93 | 4.61 | 6.00 | 2.12 | 3.59 | 2.57 | 
 | G21IP | 4.77 | 4.57 | 4.76 | 5.32 | 3.87 | 3.80 | 3.64 | 
