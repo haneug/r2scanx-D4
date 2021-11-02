@@ -201,37 +201,51 @@ Statistics in kcal/mol.
 | TPSS-D4-ATM/def2-QZVP | –0.20 | 0.38 | 0.61 | 0.57 |
 | PBE-D4-ATM/def2-QZVP | –0.45 | 0.48 | 0.80 | 0.72 |
 
-### LMGB35 ToDO
+### LMGB35
 
 Statistics in pm.
 
 | method | MD | MAD | RMSD | SD |
 | --- | ---:| ---:| ---:| ---:|
 | r²SCAN-D4-ATM/def2-QZVP | –0.12 | 0.68 | 1.01 | 1.02 |
+| r²SCANh-D4-ATM/def2-QZVP | –0.07 | 1.28 | 2.26 | 2.29 |
+| r²SCAN0-D4-ATM/def2-QZVP | –0.59 | 1.59 | 2.33 | 2.29 |
+| r²SCAN50-D4-ATM/def2-QZVP | –1.35 | 2.09 | 2.77 | 2.45 |
 
-### HMGB11 ToDO
+
+### HMGB11
 
 Statistics in pm.
 
 | method | MD | MAD | RMSD | SD |
 | --- | ---:| ---:| ---:| ---:|
 | r²SCAN-D4-ATM/def2-QZVP | 0.51 | 1.17 | 1.34 | 1.29 |
+| r²SCANh-D4-ATM/def2-QZVP | –0.13 | 1.02 | 1.18 | 1.23 |
+| r²SCAN0-D4-ATM/def2-QZVP | –1.16 | 1.16 | 1.55 | 1.07 |
+| r²SCAN50-D4-ATM/def2-QZVP | –2.70 | 2.70 | 2.91 | 1.15 |
 
-### TMC32 ToDO
+
+### TMC32
 
 Statistics in pm.
 
 | method | MD | MAD | RMSD | SD |
 | --- | ---:| ---:| ---:| ---:|
 | r²SCAN-D4-ATM/def2-QZVP | –1.57 | 1.89 | 2.35 | 1.77 |
+| r²SCANh-D4-ATM/def2-QZVP | –1.90 | 2.18 | 2.61 | 1.80 |
+| r²SCAN0-D4-ATM/def2-QZVP | –2.43 | 2.71 | 3.11 | 1.96 |
+| r²SCAN50-D4-ATM/def2-QZVP | –2.91 | 3.36 | 3.97 | 2.73 |
 
-### ROT34 ToDO
+### ROT34
 
 Statistics in MHz.
 
 | method | MD | MAD | RMSD | SD |
 | --- | ---:| ---:| ---:| ---:|
 | r²SCAN-D4-ATM/def2-QZVP | –3.22 | 4.64 | 5.88 | 4.99 |
+| r²SCANh-D4-ATM/def2-QZVP | –1.92 | 3.00 | 4.33 | 3.94 |
+| r²SCAN0-D4-ATM/def2-QZVP | –10.46 | 10.46 | 12.76 | 7.40 |
+| r²SCAN50-D4-ATM/def2-QZVP | –24.15 | 14.15 | 28.99 | 16.28 |
 
 ### LB12 ToDO
 
