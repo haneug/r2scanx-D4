@@ -156,16 +156,17 @@ Statistics in kcal/mol.
 | r²SCAN50 | 0.73 | 1.86 | 2.20 | 2.08 |
 
 
-### S30L ToDO
+### S30L (MBU 03.11.2021)
 
-Statistics in kcal/mol.
+Statistics in kcal/mol. def2-QZVPP and def2-TZVPP
 
 | method | MD | MAD | RMSD | SD |
 | --- | ---:| ---:| ---:| ---:|
-| r²SCAN/def2-QZVP | 12.86 | 12.86 | 15.24 | 8.32 |
-| r²SCAN-D4-ATM/def2-QZVP | –1.82 | 1.93 | 2.60 | 1.88 |
-| rSCAN/def2-QZVP | 14.63 | 14.63 | 17.41 | 9.61 |
-| rSCAN-D4-ATM/def2-QZVP | –2.04 | 2.09 | 2.75 | 1.89 |
+| r²SCAN | -1.83 | 1.92 | 2.60 | 1.84 |
+| r²SCANh |  |  |  |  |
+| r²SCAN0 |  |  |  |  |
+| r²SCAN50 |  |  |  |  |
+
 
 ### X40x10 (2018) (MBU 03.11.2021)
 
