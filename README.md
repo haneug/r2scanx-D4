@@ -261,12 +261,12 @@ Bond angles. Statistics in deg.
 | r²SCAN0 | 0.09 | 2.31 | 2.91 | 2.90 |
 | r²SCAN50 | 0.19 | 3.19 | 4.20 | 4.20 |
 
-### TMCONF16  (MBU 01.11.2021) #0 missing
+### TMCONF16  (MBU 01.11.2021)
 
 | method | MD | MAD | RMSD | SD |
 | --- | ---:| ---:| ---:| ---:|
 | r²SCANh | -0.13 | 0.22 | 0.29 | 0.26 |
-| r²SCAN0 |  |  |  |  |
+| r²SCAN0 | -0.17 | 0.23 | 0.31 | 0.26 |
 | r²SCAN50 | -0.25 | 0.28 | 0.39 | 0.31 |
 
 ### WCCR10  (MBU 01.11.2021)
