@@ -255,13 +255,16 @@ Statistics in pm.
 | --- | ---:| ---:| ---:| ---:|
 | r²SCAN-D4-ATM/def2-QZVP | 1.81 | 3.57 | 5.67 | 5.61 |
 
-### CCse21 ToDO
+### CCse21
 
 Bond lengths. Statistics in pm.
 
 | method | MD | MAD | RMSD | SD |
 | --- | ---:| ---:| ---:| ---:|
 | r²SCAN-D4-ATM/def2-QZVP | 0.03 | 0.38 | 0.56 | 0.57 |
+| r²SCANh-D4-ATM/def2-QZVP | –0.26 | 0.43 | 0.62 | 0.57 |
+| r²SCAN0-D4-ATM/def2-QZVP | –0.69 | 0.70 | 0.99 | 0.71 |
+| r²SCAN50-D4-ATM/def2-QZVP | –1.34 | 1.34 | 1.68 | 1.02 |
 
 
 Bond angles. Statistics in deg.
@@ -269,6 +272,9 @@ Bond angles. Statistics in deg.
 | method | MD | MAD | RMSD | SD |
 | --- | ---:| ---:| ---:| ---:|
 | r²SCAN-D4-ATM/def2-QZVP | 0.01 | 0.29 | 0.37 | 0.37 |
+| r²SCANh-D4-ATM/def2-QZVP | 0.00 | 0.24 | 0.28 | 0.29 |
+| r²SCAN0-D4-ATM/def2-QZVP | 0.02 | 0.22 | 0.28 | 0.28 |
+| r²SCAN50-D4-ATM/def2-QZVP | 0.07 | 0.28 | 0.38 | 0.38 |
 
 ### MOR41 (MBU 01.11.2021)
 
