@@ -145,36 +145,16 @@ Values for TPSS-D4, PBE-D4 and PBE0-D4 are taken from Caldeweyher et al. *J. Che
 | UPU23 | 0.39 | 0.34 | 0.39 | 0.52 | 0.45 | 0.51 | 0.54 | 
 | BUT14DIOL | 0.27 | 0.21 | 0.13 | 0.08 | 0.47 | 0.59 | 0.31 | 
 
-
-### MOR41 ToDO
-
-Statistics in kcal/mol.
-
-| method | MD | MAD | RMSD | SD |
-| --- | ---:| ---:| ---:| ---:|
-| r²SCAN/def2-QZVP | 2.10 | 4.45 | 5.94 | 5.63 |
-| r²SCAN-D4-ATM/def2-QZVP | –0.21 | 3.29 | 4.27 | 4.32 |
-| rSCAN/def2-QZVP | 2.24 | 4.66 | 6.24 | 5.90 |
-| rSCAN-D4-ATM/def2-QZVP | –0.49 | 3.22 | 4.36 | 4.38 |
-
-### ROST61 ToDO
-Statistics in kcal/mol.
-| method | MD | MAD | RMSD | SD |
-| --- | ---:| ---:| ---:| ---:|
-
-
-### L7 ToDO
+### L7 (MBU 03.11.2021)
 
 Statistics in kcal/mol.
 
 | method | MD | MAD | RMSD | SD |
 | --- | ---:| ---:| ---:| ---:|
-| r²SCAN/def2-QZVP | 9.26 | 9.26 | 10.36 | 5.01 |
-| r²SCAN-D4-ATM/def2-QZVP | 0.51 | 0.86 | 1.00 | 0.93 |
-| rSCAN/def2-QZVP | 10.33 | 10.33 | 11.58 | 5.65 |
-| rSCAN-D4-ATM/def2-QZVP | 0.40 | 0.66 | 0.78 | 0.72 |
-| SCAN/def2-QZVP | 8.02 | 8.02 | 9.07 | 4.54 |
-| SCAN-D4-ATM/def2-QZVP | 1.13 | 1.29 | 1.59 | 1.21 |
+| r²SCANh | 0.34 | 1.54 | 1.69 | 1.66 |
+| r²SCAN0 | 0.45 | 1.60 | 1.82 | 1.76 |
+| r²SCAN50 | 0.73 | 1.86 | 2.20 | 2.08 |
+
 
 ### S30L ToDO
 
@@ -187,19 +167,16 @@ Statistics in kcal/mol.
 | rSCAN/def2-QZVP | 14.63 | 14.63 | 17.41 | 9.61 |
 | rSCAN-D4-ATM/def2-QZVP | –2.04 | 2.09 | 2.75 | 1.89 |
 
-### X40x10 ToDO
+### X40x10 (2018) (MBU 03.11.2021)
 
 Statistics in kcal/mol.
 
 | method | MD | MAD | RMSD | SD |
 | --- | ---:| ---:| ---:| ---:|
-| r²SCAN/def2-QZVP | 0.29 | 0.61 | 0.97 | 0.93 |
-| r²SCAN-D4-ATM/def2-QZVP | –0.16 | 0.36 | 0.67 | 0.65 |
-| SCAN/def2-QZVP | –0.03 | 0.57 | 0.91 | 0.91 |
-| SCAN-D4-ATM/def2-QZVP | –0.34 | 0.46 | 0.84 | 0.77 |
-| PBE0-D4-ATM/def2-QZVP | –0.22 | 0.38 | 0.67 | 0.63 |
-| TPSS-D4-ATM/def2-QZVP | –0.20 | 0.38 | 0.61 | 0.57 |
-| PBE-D4-ATM/def2-QZVP | –0.45 | 0.48 | 0.80 | 0.72 |
+| r²SCANh | -0.07 | 0.30 | 0.57 | 0.56 |
+| r²SCAN0 | -0.06 | 0.31 | 0.58 | 0.57 |
+| r²SCAN50 | -0.07 | 0.34 | 0.62 | 0.62 |
+
 
 ### LMGB35
 
@@ -300,7 +277,29 @@ Bond angles. Statistics in deg.
 | r²SCAN0 | 0.44 | 0.88 | 1.22 | 1.14 |
 | r²SCAN50 | -0.21 | 1.30 | 1.58 | 1.57 |
 
+### TMBH (MBU 03.11.2021)
 
+| method | MD | MAD | RMSD | SD |
+| --- | ---:| ---:| ---:| ---:|
+| r²SCANh | -1.60 | 2.33 | 2.92 | 2.46 |
+| r²SCAN0 | -0.10 | 1.88 | 2.43 | 2.43 |
+| r²SCAN50 | 2.13 | 2.89 | 4.64 | 4.12 |
+
+### PExMPEx (MBU 03.11.2021)
+
+| method | MD | MAD | RMSD | SD |
+| --- | ---:| ---:| ---:| ---:|
+| r²SCANh | 1.95 | 4.48 | 5.19 | 4.81 |
+| r²SCAN0 | 2.73 | 4.09 | 5.08 | 4.28 |
+| r²SCAN50 | 3.88 | 4.21 | 5.32 | 3.64 |
+
+### IONPI19 (MBU 03.11.2021)
+
+| method | MD | MAD | RMSD | SD |
+| --- | ---:| ---:| ---:| ---:|
+| r²SCANh | -0.07 | 0.67 | 0.80 | 0.80 |
+| r²SCAN0 | -0.13 | 0.71 | 0.82 | 0.81 |
+| r²SCAN50 | -0.27 | 0.84 | 1.12 | 1.09 |
 
 | method | MD | MAD | RMSD | SD |
 | --- | ---:| ---:| ---:| ---:|
