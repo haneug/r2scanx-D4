@@ -145,24 +145,6 @@ Values for TPSS-D4, PBE-D4 and PBE0-D4 are taken from Caldeweyher et al. *J. Che
 | UPU23 | 0.39 | 0.34 | 0.39 | 0.52 | 0.45 | 0.51 | 0.54 | 
 | BUT14DIOL | 0.27 | 0.21 | 0.13 | 0.08 | 0.47 | 0.59 | 0.31 | 
 
-### GMTKN55 - TZVPP (HN 08.11.2021)
-
-Statistics in kcal/mol.
-
-| method | WTMAD-2 | basic | react. | barriers | inter. NCI | intra. NCI | NCI |
-| --- | ---:| ---:| ---:| ---:| ---:| ---:| ---:|
-| r²SCANh-D4/def2-TZVPP | 7.12 | 4.90 | 7.43 | 11.72 | 8.64 | 5.81 | 7.26 |
-| r²SCAN0-D4/def2-TZVPP | 6.42 | 5.39 | 6.94 | 8.17 | 7.66 | 5.20 | 6.46 |
-| r²SCAN50-D4/def2-TZVPP  | 6.78 | 6.88 | 8.65 | 5.98 | 6.78 | 5.58 | 6.20 |
-
-
-| method | WTMAD-1 | basic | react. | barriers | inter. NCI | intra. NCI | NCI |
-| --- | ---:| ---:| ---:| ---:| ---:| ---:| ---:|
-| r²SCANh-D4/def2-TZVPP | 4.22 | 4.19 | 4.28 | 5.18 | 4.38 | 3.24 | 3.89 |
-| r²SCAN0-D4/def2-TZVPP | 3.85 | 4.10 | 3.98 | 3.93 | 4.09 | 2.83 | 3.55 |
-| r²SCAN50-D4/def2-TZVPP  | 4.04 | 4.57 | 4.86 | 3.10 | 3.80 | 3.22 | 3.55 |
-
-
 ### L7 (MBU 03.11.2021)
 
 Statistics in kcal/mol.
@@ -276,17 +258,12 @@ Bond angles. Statistics in deg.
 
 | method | MD | MAD | RMSD | SD |
 | --- | ---:| ---:| ---:| ---:|
+| r²SCAN | -0.13 | 3.32 | 4.29 | 4.29 |
 | r²SCANh | -0.52 | 2.54 | 3.47 | 3.47 |
 | r²SCAN0 | 0.09 | 2.31 | 2.91 | 2.90 |
 | r²SCAN50 | 0.19 | 3.19 | 4.20 | 4.20 |
 
-### TMCONF16  (MBU 01.11.2021)
 
-| method | MD | MAD | RMSD | SD |
-| --- | ---:| ---:| ---:| ---:|
-| r²SCANh | -0.13 | 0.22 | 0.29 | 0.26 |
-| r²SCAN0 | -0.17 | 0.23 | 0.31 | 0.26 |
-| r²SCAN50 | -0.25 | 0.28 | 0.39 | 0.31 |
 
 ### WCCR10  (MBU 01.11.2021)
 
@@ -320,8 +297,44 @@ Bond angles. Statistics in deg.
 | r²SCAN0 | -0.13 | 0.71 | 0.82 | 0.81 |
 | r²SCAN50 | -0.27 | 0.84 | 1.12 | 1.09 |
 
+### ACONF12 (MBU 08.11.2021)
+
 | method | MD | MAD | RMSD | SD |
 | --- | ---:| ---:| ---:| ---:|
+| r²SCANh | 0.18 | 0.18 | 0.20 | 0.07 |
+| r²SCAN0 | 0.16 | 0.16 | 0.17 | 0.07 |
+| r²SCAN50 | 0.11 | 0.12 | 0.14 | 0.08 |
+
+### MPCONF196 (MBU 08.11.2021)
+
+| method | MD | MAD | RMSD | SD |
+| --- | ---:| ---:| ---:| ---:|
+| r²SCANh | 0.49 | 0.77 | 1.09 | 0.97 |
+| r²SCAN0 | 0.61 | 0.83 | 1.19 | 1.02 |
+| r²SCAN50 | 0.59 | 1.34 | 2.40 | 2.33 |
+
+### 37CONF8 (MBU 08.11.2021)
+
+| method | MD | MAD | RMSD | SD |
+| --- | ---:| ---:| ---:| ---:|
+| r²SCAN |  |  |  |  |
+| r²SCANh | 0.11 | 0.46 | 0.64 | 0.63 |
+| r²SCAN0 | 0.13 | 0.46 | 0.62 | 0.61 |
+| r²SCAN50 | 0.18 | 0.54 | 0.72 | 0.70 |
+
+### TMCONF16  (MBU 01.11.2021)
+
+| method | MD | MAD | RMSD | SD |
+| --- | ---:| ---:| ---:| ---:|
+| r²SCANh | -0.13 | 0.22 | 0.29 | 0.26 |
+| r²SCAN0 | -0.17 | 0.23 | 0.31 | 0.26 |
+| r²SCAN50 | -0.25 | 0.28 | 0.39 | 0.31 |
+
+
+
+| method | MD | MAD | RMSD | SD |
+| --- | ---:| ---:| ---:| ---:|
+| r²SCAN |  |  |  |  |
 | r²SCANh |  |  |  |  |
 | r²SCAN0 |  |  |  |  |
 | r²SCAN50 |  |  |  |  |
