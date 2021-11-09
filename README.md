@@ -330,6 +330,7 @@ Bond angles. Statistics in deg.
 
 | method | MD | MAD | RMSD | SD |
 | --- | ---:| ---:| ---:| ---:|
+| r²SCAN | 0.19 | 0.19 | 0.20 | 0.07 |
 | r²SCANh | 0.18 | 0.18 | 0.20 | 0.07 |
 | r²SCAN0 | 0.16 | 0.16 | 0.17 | 0.07 |
 | r²SCAN50 | 0.11 | 0.12 | 0.14 | 0.08 |
@@ -346,7 +347,7 @@ Bond angles. Statistics in deg.
 
 | method | MD | MAD | RMSD | SD |
 | --- | ---:| ---:| ---:| ---:|
-| r²SCAN |  |  |  |  |
+| r²SCAN | 0.09 | 0.50 | 0.69 | 0.69 |
 | r²SCANh | 0.11 | 0.46 | 0.64 | 0.63 |
 | r²SCAN0 | 0.13 | 0.46 | 0.62 | 0.61 |
 | r²SCAN50 | 0.18 | 0.54 | 0.72 | 0.70 |
