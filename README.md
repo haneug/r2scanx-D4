@@ -145,6 +145,24 @@ Values for TPSS-D4, PBE-D4 and PBE0-D4 are taken from Caldeweyher et al. *J. Che
 | UPU23 | 0.39 | 0.34 | 0.39 | 0.52 | 0.45 | 0.51 | 0.54 | 
 | BUT14DIOL | 0.27 | 0.21 | 0.13 | 0.08 | 0.47 | 0.59 | 0.31 | 
 
+### GMTKN55 - TZVPP (HN 08.11.2021)
+
+Statistics in kcal/mol.
+
+| method | WTMAD-2 | basic | react. | barriers | inter. NCI | intra. NCI | NCI |
+| --- | ---:| ---:| ---:| ---:| ---:| ---:| ---:|
+| r²SCANh-D4/def2-TZVPP | 7.12 | 4.90 | 7.43 | 11.72 | 8.64 | 5.81 | 7.26 |
+| r²SCAN0-D4/def2-TZVPP | 6.42 | 5.39 | 6.94 | 8.17 | 7.66 | 5.20 | 6.46 |
+| r²SCAN50-D4/def2-TZVPP  | 6.78 | 6.88 | 8.65 | 5.98 | 6.78 | 5.58 | 6.20 |
+
+
+| method | WTMAD-1 | basic | react. | barriers | inter. NCI | intra. NCI | NCI |
+| --- | ---:| ---:| ---:| ---:| ---:| ---:| ---:|
+| r²SCANh-D4/def2-TZVPP | 4.22 | 4.19 | 4.28 | 5.18 | 4.38 | 3.24 | 3.89 |
+| r²SCAN0-D4/def2-TZVPP | 3.85 | 4.10 | 3.98 | 3.93 | 4.09 | 2.83 | 3.55 |
+| r²SCAN50-D4/def2-TZVPP  | 4.04 | 4.57 | 4.86 | 3.10 | 3.80 | 3.22 | 3.55 |
+
+
 ### L7 (MBU 03.11.2021)
 
 Statistics in kcal/mol.
