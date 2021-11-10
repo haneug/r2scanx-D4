@@ -299,6 +299,16 @@ Bond angles. Statistics in deg.
 | r²SCAN0 | 0.44 | 0.88 | 1.22 | 1.14 |
 | r²SCAN50 | -0.21 | 1.30 | 1.58 | 1.57 |
 
+### MOBH35 (MBU 01.11.2021)
+
+| method | MD | MAD | RMSD | SD |
+| --- | ---:| ---:| ---:| ---:|
+| r²SCAN | -2.97 | 3.71 | 4.86 | 3.85 |
+| r²SCANh |  |  |  |  |
+| r²SCAN0 |  |  |  |  |
+| r²SCAN50 |  |  |  |  |
+
+
 ### TMBH (MBU 03.11.2021)
 
 | method | MD | MAD | RMSD | SD |
