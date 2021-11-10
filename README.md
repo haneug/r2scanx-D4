@@ -280,6 +280,9 @@ Bond angles. Statistics in deg.
 | r²SCANh | -0.52 | 2.54 | 3.47 | 3.47 |
 | r²SCAN0 | 0.09 | 2.31 | 2.91 | 2.90 |
 | r²SCAN50 | 0.19 | 3.19 | 4.20 | 4.20 |
+| wB97X-V |  | 2.21	 |  |  |  (MOR41 paper)
+| PBE0-D4 |  | 2.3 |  |  | (def2-QZVP, r2scan-d4 paper)
+| PW6B95-D4 |  | 3.19 |  |  | (MOR41 energies mit neu gerechnetem D4, erstaunlicherweise wesentlich schlechter als D3 (2.70 laut webtable)
 
 ### ROST61 (MBU 08.11.2021)
 
