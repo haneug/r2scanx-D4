@@ -323,6 +323,9 @@ Bond angles. Statistics in deg.
 | r²SCANh | -1.60 | 2.33 | 2.92 | 2.46 |
 | r²SCAN0 | -0.10 | 1.88 | 2.43 | 2.43 |
 | r²SCAN50 | 2.13 | 2.89 | 4.64 | 4.12 |
+| wB97X-V | 1.85 | 2.11 | 3.40 | 2.85 |
+| PBE0-D4 |  |  |  |  |
+| PW6B95-D4 |  |  |  |  |
 
 ### PExMPEx (MBU 03.11.2021) final name: MLA24
 
