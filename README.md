@@ -308,11 +308,11 @@ Bond angles. Statistics in deg.
 | r²SCAN0 | -0.10 | 1.88 | 2.43 | 2.43 |
 | r²SCAN50 | 2.13 | 2.89 | 4.64 | 4.12 |
 
-### PExMPEx (MBU 03.11.2021)
+### PExMPEx (MBU 03.11.2021) final name: MLA24
 
 | method | MD | MAD | RMSD | SD |
 | --- | ---:| ---:| ---:| ---:|
-| r²SCAN |  |  |  |  |
+| r²SCAN | 1.37 | 4.81 | 5.42 | 5.24 |
 | r²SCANh | 1.95 | 4.48 | 5.19 | 4.81 |
 | r²SCAN0 | 2.73 | 4.09 | 5.08 | 4.28 |
 | r²SCAN50 | 3.88 | 4.21 | 5.32 | 3.64 |
