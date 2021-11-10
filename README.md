@@ -213,7 +213,7 @@ Statistics in kcal/mol.
 
 | method | MD | MAD | RMSD | SD |
 | --- | ---:| ---:| ---:| ---:|
-| r²SCAN |  |  |  |  |
+| r²SCAN | -0.02 | 0.24 | 0.35 | 0.35 |
 | r²SCANh | -0.00 | 0.22 | 0.31 | 0.31 |
 | r²SCAN0 | 0.02 | 0.20 | 0.28 | 0.28 |
 | r²SCAN50 | 0.04 | 0.22 | 0.32 | 0.32 |
@@ -372,7 +372,7 @@ Bond angles. Statistics in deg.
 
 | method | MD | MAD | RMSD | SD |
 | --- | ---:| ---:| ---:| ---:|
-| r²SCAN |  | 0.71 |  |  |
+| r²SCAN | -0.06 | 0.72 | 0.85 | 0.85 | (MAD 0.71 im paper)
 | r²SCANh | -0.07 | 0.67 | 0.80 | 0.80 |
 | r²SCAN0 | -0.13 | 0.71 | 0.82 | 0.81 |
 | r²SCAN50 | -0.27 | 0.84 | 1.12 | 1.09 |
