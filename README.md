@@ -326,6 +326,10 @@ Bond angles. Statistics in deg.
 | r²SCANh | 1.95 | 4.48 | 5.19 | 4.81 |
 | r²SCAN0 | 2.73 | 4.09 | 5.08 | 4.28 |
 | r²SCAN50 | 3.88 | 4.21 | 5.32 | 3.64 |
+| wB97X-V | -1.49 | 1.69 | 2.23 | 1.65 |
+| PBE0-D4 |  |  |  |  |
+| PW6B95-D4 |  |  |  |  |
+
 
 ### IONPI19 (MBU 03.11.2021)
 
@@ -380,3 +384,6 @@ Bond angles. Statistics in deg.
 | r²SCANh |  |  |  |  |
 | r²SCAN0 |  |  |  |  |
 | r²SCAN50 |  |  |  |  |
+| wB97X-V |  |  |  |  |
+| PBE0-D4 |  |  |  |  |
+| PW6B95-D4 |  |  |  |  |
