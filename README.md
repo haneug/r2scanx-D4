@@ -24,9 +24,9 @@
 
 | method | b |
 | --- | --- |
-| r²SCANh-VV10 | - |
-| r²SCAN0-VV10 | - |
-| r²SCAN50-VV10 | - |
+| r²SCANh-VV10 | 11.9 |
+| r²SCAN0-VV10 | 11.4 |
+| r²SCAN50-VV10 | 10.8 |
 
 ## Benchmark Results
 
