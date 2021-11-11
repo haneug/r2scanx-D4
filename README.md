@@ -174,8 +174,8 @@ Statistics in kcal/mol.
 | r²SCAN0 | 0.45 | 1.60 | 1.82 | 1.76 |
 | r²SCAN50 | 0.73 | 1.86 | 2.20 | 2.08 |
 | wB97X-V |  |  |  |  |
-| PBE0-D4 |  |  |  |  |
-| PW6B95-D4 |  |  |  |  |
+| PBE0-D4 | –0.27 | 0.56 | 0.63 | 0.61 |
+| PW6B95-D4 | 0.95 | 1.11 | 1.52 | 1.28 |
 
 
 ### S30L (MBU 03.11.2021)
@@ -188,7 +188,7 @@ Statistics in kcal/mol. def2-QZVPP and def2-TZVPP
 | r²SCANh |  |  |  |  |
 | r²SCAN0 |  |  |  |  |
 | r²SCAN50 |  |  |  |  |
-
+| PW6B95-D4 | 1.53 | 2.45 | 2.87 | 2.47 |
 
 ### X40x10 (2018) (MBU 03.11.2021)
 
@@ -272,13 +272,16 @@ Statistics in MHz.
 | r²SCAN0-D4-ATM/def2-QZVP | –10.46 | 10.46 | 12.76 | 7.40 |
 | r²SCAN50-D4-ATM/def2-QZVP | –24.15 | 14.15 | 28.99 | 16.28 |
 
-### LB12 ToDO
+### LB12
 
 Statistics in pm.
 
 | method | MD | MAD | RMSD | SD |
 | --- | ---:| ---:| ---:| ---:|
 | r²SCAN-D4-ATM/def2-QZVP | 1.81 | 3.57 | 5.67 | 5.61 |
+| r²SCANh-D4-ATM/def2-QZVP | 2.33 | 3.88 | 6.00 | 5.77 |
+| r²SCAN0-D4-ATM/def2-QZVP | 0.67 | 3.16 | 4.89 | 5.05 |
+| r²SCAN50-D4-ATM/def2-QZVP | –2.24 | 5.48 | 9.03 | 9.14 |
 
 ### CCse21
 
@@ -310,8 +313,10 @@ Bond angles. Statistics in deg.
 | r²SCAN0 | 0.09 | 2.31 | 2.91 | 2.90 |
 | r²SCAN50 | 0.19 | 3.19 | 4.20 | 4.20 |
 | wB97X-V |  | 2.21	 |  |  |  (MOR41 paper)
-| PBE0-D4 |  | 2.3 |  |  | (def2-QZVP, r2scan-d4 paper)
-| PW6B95-D4 |  | 3.19 |  |  | (MOR41 energies mit neu gerechnetem D4, erstaunlicherweise wesentlich schlechter als D3 (2.70 laut webtable)
+| PBE0-D4 | –0.25 | 2.28 | 3.08 | 3.11 | <-- def2-QZVPP from DFT-D4 paper -->
+| PW6B95-D4 | 2.68 | 3.20 | 3.99 | 2.98 |
+
+<!-- MOR41 energies mit neu gerechnetem D4, erstaunlicherweise wesentlich schlechter als D3 (2.70 laut webtable -->
 
 ### ROST61 (MBU 08.11.2021)
 
