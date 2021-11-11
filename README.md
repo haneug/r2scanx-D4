@@ -329,6 +329,9 @@ Bond angles. Statistics in deg.
 | r²SCANh | 0.91 | 1.96 | 2.69 | 2.53 |
 | r²SCAN0 | 0.44 | 0.88 | 1.22 | 1.14 |
 | r²SCAN50 | -0.21 | 1.30 | 1.58 | 1.57 |
+| wB97X-V |  |  |  |  |
+| PBE0-D4 |  |  |  |  |
+| PW6B95-D4 |  |  |  |  |
 
 ### MOBH35 (MBU 01.11.2021)
 
@@ -355,7 +358,7 @@ Bond angles. Statistics in deg.
 | PBE0-D4 | -0.87 | 2.32 | 2.87 | 2.74 |
 | PW6B95-D4 | 0.10 | 1.26 | 1.66 | 1.65 |
 
-### PExMPEx (MBU 03.11.2021) final name: MLA24
+### MLA24 (MBU 03.11.2021) former name: PExMPEx
 
 | method | MD | MAD | RMSD | SD |
 | --- | ---:| ---:| ---:| ---:|
@@ -365,7 +368,7 @@ Bond angles. Statistics in deg.
 | r²SCAN50 | 3.88 | 4.21 | 5.32 | 3.64 |
 | wB97X-V | -1.49 | 1.69 | 2.23 | 1.65 |
 | PBE0-D4 | 0.92 | 3.24 | 3.69 | 3.57 |
-| PW6B95-D4 |  |  |  |  |
+| PW6B95-D4 | 0.08 | 2.62 | 2.87 | 2.87 |
 
 
 ### IONPI19 (MBU 03.11.2021)
