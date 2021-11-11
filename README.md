@@ -389,7 +389,7 @@ Bond angles. Statistics in deg.
 | r²SCAN0 | -0.13 | 0.71 | 0.82 | 0.81 |
 | r²SCAN50 | -0.27 | 0.84 | 1.12 | 1.09 |
 | wB97X-V |  | 0.73 |  |  |
-| PBE0-D4 |  |  | 0.88 |  |
+| PBE0-D4 |  | 0.88 |  |  |
 | PW6B95-D4 |  | 0.83 |  |  | (IONPI paper SI Tab S15 Korrekt? Spichi fragen!)
 
 ### ACONF12 (MBU 08.11.2021)
