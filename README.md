@@ -194,7 +194,7 @@ Statistics in kcal/mol. def2-QZVPP and def2-TZVPP
 | r²SCAN | -1.83 | 1.92 | 2.60 | 1.84 |
 | r²SCANh |  |  |  |  |
 | r²SCAN0 |  |  |  |  |
-| r²SCAN50 |  |  |  |  |
+| r²SCAN50 | -1.58 | 2.04 | 2.46 | 1.88 |
 | PW6B95-D4 | 1.53 | 2.45 | 2.87 | 2.47 |
 
 ### X40x10 (2018) (MBU 03.11.2021)
