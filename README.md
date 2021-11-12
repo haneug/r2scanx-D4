@@ -14,13 +14,21 @@
 
 | method | s6 | s8 | s9 | a1 | a2/Bohr |
 | --- | --- | --- | --- | --- | --- |
-| r²SCANh-D4(EEQ)-ATM/def2-QZVP | 1 | 0.8324 | 1 | 0.4944 | 5.9019|
+| r²SCANh-D4(EEQ)-ATM/def2-QZVP | 1 | 0.8324 | 1 | 0.4944 | 5.9019 |
+| r²SCANh-D3(BJ)-ATM/def2-QZVP | 1 | 1.1236 | 1 | 0.4709 | 5.9157 |
 | r²SCAN0-D4(EEQ)-ATM/def2-QZVP | 1 | 0.8992 | 1 | 0.4778 | 5.8779 |
+| r²SCAN0-D3(BJ)-ATM/def2-QZVP | 1 | 1.1846 | 1 | 0.4534 | 5.8972 | 
 | r²SCAN50-D4(EEQ)-ATM/def2-QZVP | 1 | 1.0471 | 1 | 0.4574 | 5.8969 |
-| r²SCANh-D4(EEQ)-ATM/def2-TZVPP | 1 | 0.9119 | 1 | 0.4832 | 6.2073 |
-| r²SCAN0-D4(EEQ)-ATM/def2-TZVPP | 1 | 0.9397 | 1 | 0.4578 | 6.1864 |
-| r²SCAN50-D4(EEQ)-ATM/def2-TZVPP | 1 | 1.0576 | 1 | 0.4232 | 6.2378 |
+| r²SCAN50-D3(BJ)-ATM/def2-QZVP | 1 | 1.3294 | 1 | 0.4311 | 5.9240 |
 
+| method | s6 | s8 | s9 | a1 | a2/Bohr |
+| --- | --- | --- | --- | --- | --- |
+| r²SCANh-D4(EEQ)-ATM/def2-TZVPP | 1 | 0.9119 | 1 | 0.4832 | 6.2073 |
+| r²SCANh-D3(BJ)-ATM/def2-TZVPP | 1 | 1.1493 | 1 | 0.4761 | 6.0947 |
+| r²SCAN0-D4(EEQ)-ATM/def2-TZVPP | 1 | 0.9397 | 1 | 0.4578 | 6.1864 |
+| r²SCAN0-D3(BJ)-ATM/def2-TZVPP | 1 | 1.1859 | 1 | 0.4567 | 6.0583 |
+| r²SCAN50-D4(EEQ)-ATM/def2-TZVPP | 1 | 1.0576 | 1 | 0.4232 | 6.2378 |
+| r²SCAN50-D3(BJ)-ATM/def2-TZVPP | 1 | 1.2980 | 1 | 0.4314 | 6.0662 |
 
 | method | b |
 | --- | --- |
