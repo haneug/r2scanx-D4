@@ -371,7 +371,7 @@ Bond angles. Statistics in deg.
 | r²SCAN50 |  |  |  |  |
 | wB97X-V |  |  |  |  |
 | PBE0-D4 |  |  |  |  |
-| PW6B95-D4 |  |  |  |  |
+| PW6B95-D4 | -1.06 | 2.07 | 2.84 | 2.63 |
 
 
 ### TMBH (MBU 03.11.2021)
