@@ -208,11 +208,11 @@ Statistics in kcal/mol.
 | r²SCAN0 | -0.06 | 0.31 | 0.58 | 0.57 |
 | r²SCAN50 | -0.07 | 0.34 | 0.62 | 0.62 |
 
-### CHAL336 (MBU 10.11.2021)
+### CHAL336 (MBU 10.11.2021) (hier qzvpp im originalpaper immer ma-qzvpp)
 
 | method | MD | MAD | RMSD | SD |
 | --- | ---:| ---:| ---:| ---:|
-| r²SCAN |  |  |  |  |
+| r²SCAN | -1.67 | 1.90 | 2.81 | 2.25 |
 | r²SCANh | -1.54 | 1.75 | 2.62 | 2.12 |
 | r²SCAN0 |  |  |  |  |
 | r²SCAN50 |  |  |  |  |
