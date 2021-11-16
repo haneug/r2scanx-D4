@@ -448,7 +448,7 @@ Bond angles. Statistics in deg.
 | r²SCAN50 | 0.59 | 1.34 | 2.40 | 2.33 |
 | wB97X-V |  |  |  |  |
 | PBE0-D4 |  |  |  |  |
-| PW6B95-D4 |  |  |  |  |
+| PW6B95-D4 | -0.01 | 0.90 | 1.31 | 1.31 |
 
 ### 37CONF8 (MBU 08.11.2021)
 
@@ -460,7 +460,7 @@ Bond angles. Statistics in deg.
 | r²SCAN50 | 0.18 | 0.54 | 0.72 | 0.70 |
 | wB97X-V |  |  |  |  |
 | PBE0-D4 |  |  |  |  |
-| PW6B95-D4 |  |  |  |  |
+| PW6B95-D4 | -0.28 | 0.64 | 0.82 | 0.77 |
 
 ### TMCONF16  (MBU 01.11.2021)
 
