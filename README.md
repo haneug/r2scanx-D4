@@ -227,9 +227,9 @@ Statistics in kcal/mol.
 
 | method | MD | MAD | RMSD | SD |
 | --- | ---:| ---:| ---:| ---:|
-| r²SCAN | -0.97 | 1.31 | 2.03 | 1.78 |
+| r²SCAN | |  |  |  |
 | r²SCANh |  |  |  |  |
-| r²SCAN0 |  |  |  |  |
+| r²SCAN0 | -0.97 | 1.31 | 2.03 | 1.78 |
 | r²SCAN50 |  |  |  |  |
 | wB97X-V |  |  |  |  |
 | PBE0-D4 |  |  |  |  |
