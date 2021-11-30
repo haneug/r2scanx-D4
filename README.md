@@ -329,6 +329,7 @@ Statistics in pm.
 | r²SCANh-D4-ATM/def2-QZVP | 2.33 | 3.88 | 6.00 | 5.77 |
 | r²SCAN0-D4-ATM/def2-QZVP | 0.67 | 3.16 | 4.89 | 5.05 |
 | r²SCAN50-D4-ATM/def2-QZVP | –2.24 | 5.48 | 9.03 | 9.14 |
+| PBE0-D4/def2-QZVP | –0.17 | 3.16 | 5.09 | 5.31 |
 | PW6B95-D4/def2-QZVP | –3.05 | 5.96 | 8.25 | 8.00 |
 | ωB97X-V/def2-QZVP | –0.67 | 6.33 | 10.56 | 11.01 |
 
@@ -342,6 +343,7 @@ Bond lengths. Statistics in pm.
 | r²SCANh-D4-ATM/def2-QZVP | –0.26 | 0.43 | 0.62 | 0.57 |
 | r²SCAN0-D4-ATM/def2-QZVP | –0.69 | 0.70 | 0.99 | 0.71 |
 | r²SCAN50-D4-ATM/def2-QZVP | –1.34 | 1.34 | 1.68 | 1.02 |
+| PBE0-D4/def2-QZVP | –0.23 | 0.53 | 0.75 | 0.72 |
 | PW6B95-D4/def2-QZVP | –0.60 | 0.60 | 0.81 | 0.56 |
 | ωB97X-V/def2-QZVP | 0.01 | 0.51 | 0.73 | 9.74 |
 
@@ -354,6 +356,7 @@ Bond angles. Statistics in deg.
 | r²SCANh-D4-ATM/def2-QZVP | 0.00 | 0.24 | 0.28 | 0.29 |
 | r²SCAN0-D4-ATM/def2-QZVP | 0.02 | 0.22 | 0.28 | 0.28 |
 | r²SCAN50-D4-ATM/def2-QZVP | 0.07 | 0.28 | 0.38 | 0.38 |
+| PBE0-D4/def2-QZVP | 0.03 | 0.31 | 0.38 | 0.38 |
 | PW6B95-D4/def2-QZVP | 0.03 | 0.24 | 0.29 | 0.29 |
 | ωB97X-V/def2-QZVP | 0.06 | 0.18 | 0.23 | 0.22 |
 
