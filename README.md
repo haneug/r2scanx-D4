@@ -152,6 +152,7 @@ Values for TPSS-D4, PBE-D4 and PBE0-D4 are taken from Caldeweyher et al. *J. Che
 | SCONF | 0.54 | 0.36 | 0.14 | 0.18 | 1.22 | 0.88 | 0.32 | 
 | UPU23 | 0.39 | 0.34 | 0.39 | 0.52 | 0.45 | 0.51 | 0.54 | 
 | BUT14DIOL | 0.27 | 0.21 | 0.13 | 0.08 | 0.47 | 0.59 | 0.31 | 
+
 ### GMTKN55 - TZVPP (HN 12.11.2021)
 
 Statistics in kcal/mol.
@@ -242,7 +243,7 @@ Statistics in kcal/mol.
 | r²SCAN0 | -0.15 | 0.35 | 0.66 | 0.64 |
 | r²SCAN50 |  |  |  |  |
 
-
+----------------------------------------------------------------
 
 ### CHAL336 (MBU 10.11.2021) (hier qzvpp im originalpaper immer ma-qzvpp)
 
