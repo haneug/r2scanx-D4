@@ -170,8 +170,9 @@ Statistics in kcal/mol.
 | r²SCAN0-D4/def2-TZVPP | 3.72 | 3.88 | 3.98 | 3.93 | 3.8 | 2.83 | 3.38 |
 | r²SCAN50-D4/def2-TZVPP | 3.92 | 4.36 | 4.86 | 3.1 | 3.56 | 3.22 | 3.41 |
 
+----------------------------------------------------------------
 
-### L7 (MBU 03.11.2021)
+### L7 / def2-QZVPP (MBU 03.11.2021)
 
 Statistics in kcal/mol.
 
@@ -185,8 +186,17 @@ Statistics in kcal/mol.
 | PBE0-D4 | –0.27 | 0.56 | 0.63 | 0.61 |
 | PW6B95-D4 | 0.95 | 1.11 | 1.52 | 1.28 |
 
+### L7 / def2-TZVPP 
 
-### S30L (MBU 03.11.2021)
+| method | MD | MAD | RMSD | SD |
+| --- | ---:| ---:| ---:| ---:|
+| r²SCANh | 0.62 | 1.90 | 2.07 | 1.97 |
+| r²SCAN0 | 0.71 | 1.93 | 2.17 | 2.05 |
+| r²SCAN50 |  |  |  |  |
+
+----------------------------------------------------------------
+
+### S30L / def2-QZVPP (MBU 03.11.2021)
 
 Statistics in kcal/mol. def2-QZVPP and def2-TZVPP
 
@@ -200,7 +210,17 @@ Statistics in kcal/mol. def2-QZVPP and def2-TZVPP
 | PBE0-D4 | -1.81 | 2.59 | 3.34 | 2.81 |  => RIJCOSX
 | PW6B95-D4 | 1.53 | 2.45 | 2.87 | 2.47 |
 
-### X40x10 (2018) (MBU 03.11.2021)
+### S30L / def2-TZVPP
+
+| method | MD | MAD | RMSD | SD |
+| --- | ---:| ---:| ---:| ---:|
+| r²SCANh | -1.67 | 1.87 | 2.45 | 1.79 |
+| r²SCAN0 |  |  |  |  |
+| r²SCAN50 | -1.35 | 1.89 | 2.41 | 2.00 |
+
+----------------------------------------------------------------
+
+### X40x10(2018) / def2-QZVPP (MBU 03.11.2021)
 
 Statistics in kcal/mol.
 
@@ -213,6 +233,16 @@ Statistics in kcal/mol.
 | wB97X-V | 0.17 | 0.26 | 0.47 | 0.44 |
 | PBE0-D4 | -0.16 | 0.32 | 0.55 | 0.52 |
 | PW6B95-D4 | 0.07 | 0.21 | 0.31 | 0.30 |
+
+### X40x10(2018) / def2-TZVPP
+
+| method | MD | MAD | RMSD | SD |
+| --- | ---:| ---:| ---:| ---:|
+| r²SCANh | -0.17 | 0.35 | 0.66 | 0.63 |
+| r²SCAN0 | -0.15 | 0.35 | 0.66 | 0.64 |
+| r²SCAN50 |  |  |  |  |
+
+
 
 ### CHAL336 (MBU 10.11.2021) (hier qzvpp im originalpaper immer ma-qzvpp)
 
