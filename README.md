@@ -245,7 +245,7 @@ Statistics in kcal/mol.
 
 ----------------------------------------------------------------
 
-### CHAL336 (MBU 10.11.2021) (hier qzvpp im originalpaper immer ma-qzvpp)
+### CHAL336 / def2-QZVPP (MBU 10.11.2021) (hier qzvpp im originalpaper immer ma-qzvpp)
 
 | method | MD | MAD | RMSD | SD |
 | --- | ---:| ---:| ---:| ---:|
@@ -257,7 +257,7 @@ Statistics in kcal/mol.
 | PBE0-D4 | -2.01 | 2.05 | 2.80 | 1.95 |
 | PW6B95-D4 | -0.93 | 1.28 | 1.90 | 1.65 |
 
-### CHAL336/ma-def2-QZVPP
+### CHAL336 / ma-def2-QZVPP
 
 | method | MD | MAD | RMSD | SD |
 | --- | ---:| ---:| ---:| ---:|
@@ -269,7 +269,17 @@ Statistics in kcal/mol.
 | PBE0-D4 |  |  |  |  |
 | PW6B95-D4 |  |  |  |  |
 
-### HB300SPX (MBU 10.11.2021)
+### CHAL336 / def2-TZVPP
+
+| method | MD | MAD | RMSD | SD |
+| --- | ---:| ---:| ---:| ---:|
+| r²SCANh | -2.23 | 2.42 | 3.82 | 3.09 |
+| r²SCAN0 | -2.09 | 2.26 | 3.51 | 2.82 |
+| r²SCAN50 |  |  |  |  |
+
+----------------------------------------------------------------
+
+### HB300SPX / def2-QZVPP (MBU 10.11.2021)
 
 | method | MD | MAD | RMSD | SD |
 | --- | ---:| ---:| ---:| ---:|
