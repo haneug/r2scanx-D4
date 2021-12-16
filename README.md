@@ -423,7 +423,7 @@ Bond angles. Statistics in deg.
 | PW6B95-D4/def2-QZVP | 0.03 | 0.24 | 0.29 | 0.29 |
 | ωB97X-V/def2-QZVP | 0.06 | 0.18 | 0.23 | 0.22 |
 
-### MOR41 (MBU 01.11.2021)
+### MOR41 / def2-QZVPP (MBU 01.11.2021)
 
 | method | MD | MAD | RMSD | SD |
 | --- | ---:| ---:| ---:| ---:|
@@ -436,15 +436,18 @@ Bond angles. Statistics in deg.
 | PW6B95-D4 | 2.68 | 3.20 | 3.99 | 2.98 |
 
 <!-- MOR41 energies mit neu gerechnetem D4, erstaunlicherweise wesentlich schlechter als D3 (2.70 laut webtable -->
+
+### MOR41 / def2-TZVPP
+
 | method | MD | MAD | RMSD | SD |
 | --- | ---:| ---:| ---:| ---:|
-| r²SCANh |  |  |  |  |
-| r²SCAN0 |  |  |  |  |
-| r²SCAN50 |  |  |  |  |
+| r²SCANh | -0.04 | 2.59 | 3.55 | 3.55 |
+| r²SCAN0 | 0.08 | 2.26 | 2.90 | 2.90 |
+| r²SCAN50 | 0.12 | 3.10 | 4.11 | 4.11 |
 
 ----------------------------------------------------------------
 
-### ROST61 (MBU 08.11.2021)
+### ROST61 / def2-QZVPP (MBU 08.11.2021)
 
 | method | MD | MAD | RMSD | SD |
 | --- | ---:| ---:| ---:| ---:|
@@ -456,6 +459,8 @@ Bond angles. Statistics in deg.
 | PBE0-D4 |  | 2.6 |  |  |
 | PW6B95-D4 |  | 2.5 |  |  |
 
+### ROST61 / def2-TZVPP 
+
 | method | MD | MAD | RMSD | SD |
 | --- | ---:| ---:| ---:| ---:|
 | r²SCANh |  |  |  |  |
@@ -464,7 +469,7 @@ Bond angles. Statistics in deg.
 
 ----------------------------------------------------------------
 
-### WCCR10  (MBU 01.11.2021)
+### WCCR10 / def2-QZVPP (MBU 01.11.2021)
 
 | method | MD | MAD | RMSD | SD |
 | --- | ---:| ---:| ---:| ---:|
@@ -476,15 +481,17 @@ Bond angles. Statistics in deg.
 | PBE0-D4 | -0.11 | 0.83 | 0.96 | 0.95 |
 | PW6B95-D4 | -1.82 | 1.82 | 2.13 | 1.11 |
 
+### WCCR10 / def2-TZVPP
+
 | method | MD | MAD | RMSD | SD |
 | --- | ---:| ---:| ---:| ---:|
-| r²SCANh |  |  |  |  |
-| r²SCAN0 |  |  |  |  |
-| r²SCAN50 |  |  |  |  |
+| r²SCANh | 1.05 | 1.20 | 2.82 | 2.61 |
+| r²SCAN0 | 0.60 | 1.05 | 1.36 | 1.22 |
+| r²SCAN50 | -0.04 | 1.26 | 1.57 | 1.57 |
 
 ----------------------------------------------------------------
 
-### MOBH35 (MBU 01.11.2021)
+### MOBH35 / def2-QZVPP (MBU 01.11.2021)
 
 | method | MD | MAD | RMSD | SD |
 | --- | ---:| ---:| ---:| ---:|
@@ -496,11 +503,13 @@ Bond angles. Statistics in deg.
 | PBE0-D4 | -1.24 | 2.38 | 3.20 | 2.95 |
 | PW6B95-D4 | -1.06 | 2.07 | 2.84 | 2.63 |
 
+### MOBH35 / def2-TZVPP 
+
 | method | MD | MAD | RMSD | SD |
 | --- | ---:| ---:| ---:| ---:|
-| r²SCANh |  |  |  |  |
+| r²SCANh | -1.97 | 2.78 | 3.76 | 3.21 |
 | r²SCAN0 |  |  |  |  |
-| r²SCAN50 |  |  |  |  |
+| r²SCAN50 | 1.57 | 2.87 | 4.01 | 3.69 |
 
 ----------------------------------------------------------------
 
