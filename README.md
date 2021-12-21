@@ -207,7 +207,7 @@ Statistics in kcal/mol. def2-QZVPP and def2-TZVPP
 | r²SCANh | -1.93 | 2.01 | 2.61 | 1.76 |
 | r²SCAN0 | -1.78 | 2.01 | 2.50 | 1.75 |
 | r²SCAN50 | -1.58 | 2.04 | 2.46 | 1.88 |
-| wB97X-V |  |  |  |  |
+| wB97X-D3 |  | 2.6 |  |  |      ACHTUNG!!! D3 value from original publication as calcs still running
 | PBE0-D4 | -1.81 | 2.59 | 3.34 | 2.81 |  => RIJCOSX
 | PW6B95-D4 | 1.53 | 2.45 | 2.87 | 2.47 |
 
