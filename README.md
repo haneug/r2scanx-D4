@@ -38,6 +38,41 @@
 
 ## Benchmark Results
 
+### NCIBLIND ToDO
+
+Statistics in kcal/mol, Gini coefficients are dimensionless.
+
+| method | MD | MAD | RMSD | SD | Gini |
+| --- | ---:| ---:| ---:| ---:| ---: |
+| r²SCAN-D4-ATM/def2-QZVP | –0.05 | 0.17 | 0.29 | 0.29 | 0.64 |
+| r²SCANh-D4-ATM/def2-QZVP | -0.059 | 0.179 | 0.316 | 0.313 | |
+| r²SCAN0-D4-ATM/def2-QZVP | -0.071 | 0.200 | 0.357 | 0.353 | |
+| r²SCAN50-D4-ATM/def2-QZVP | -0.102 | 0.256 | 0.460 | 0.451 | |
+
+
+### S22x5 ToDO
+
+Statistics in kcal/mol, Gini coefficients are dimensionless.
+
+| method | MD | MAD | RMSD | SD | Gini |
+| --- | ---:| ---:| ---:| ---:| ---: |
+| r²SCAN-D4-ATM/def2-QZVP | –0.12 | 0.28 | 0.51 | 0.50 | 0.65 |
+| r²SCANh | -0.155 | 0.303 | 0.565 | 0.546 | |
+| r²SCAN0 | -0.199 | 0.353 | 0.658 | 0.630 | |
+| r²SCAN50 | -0.282 | 0.466 | 0.859 | 0.815 | |
+
+### S66x8 ToDO
+
+Statistics in kcal/mol, Gini coefficients are dimensionless.
+
+| method | MD | MAD | RMSD | SD | Gini |
+| --- | ---:| ---:| ---:| ---:| ---: |
+| r²SCAN-D4-ATM/def2-QZVP | –0.09 | 0.23 | 0.38 | 0.36 | 0.56 |
+| r²SCANh | -0.112 | 0.244 | 0.406 | 0.391 | |
+| r²SCAN0 | -0.133 | 0.274 | 0.463 | 0.444 | |
+| r²SCAN50 | -0.180 | 0.352 | 0.600 | 0.573 | |
+
+
 ### GMTKN55
 
 Statistics in kcal/mol.
@@ -138,7 +173,7 @@ Statistics in kcal/mol.
 
 ----------------------------------------------------------------
 
-### L7 / def2-QZVPP
+### L7 / def2-QZVPP (MBU 03.11.2021)
 
 Statistics in kcal/mol.
 
@@ -162,9 +197,9 @@ Statistics in kcal/mol.
 
 ----------------------------------------------------------------
 
-### S30L / def2-QZVPP
+### S30L / def2-QZVPP (MBU 03.11.2021)
 
-Statistics in kcal/mol.
+Statistics in kcal/mol. def2-QZVPP and def2-TZVPP
 
 | method | MD | MAD | RMSD | SD |
 | --- | ---:| ---:| ---:| ---:|
@@ -172,7 +207,7 @@ Statistics in kcal/mol.
 | r²SCANh | -1.93 | 2.01 | 2.61 | 1.76 |
 | r²SCAN0 | -1.78 | 2.01 | 2.50 | 1.75 |
 | r²SCAN50 | -1.58 | 2.04 | 2.46 | 1.88 |
-| wB97X-D3 |  | 2.6 |  |  |      
+| wB97X-D3 |  | 2.6 |  |  |      ACHTUNG!!! D3 value from original publication as calcs still running
 | PBE0-D4 | -1.81 | 2.59 | 3.34 | 2.81 |  => RIJCOSX
 | PW6B95-D4 | 1.53 | 2.45 | 2.87 | 2.47 |
 
@@ -186,7 +221,7 @@ Statistics in kcal/mol.
 
 ----------------------------------------------------------------
 
-### X40x10(2018) / def2-QZVPP
+### X40x10(2018) / def2-QZVPP (MBU 03.11.2021)
 
 Statistics in kcal/mol.
 
@@ -210,9 +245,7 @@ Statistics in kcal/mol.
 
 ----------------------------------------------------------------
 
-### CHAL336 / def2-QZVPP
-
-Statistics in kcal/mol.
+### CHAL336 / def2-QZVPP (MBU 10.11.2021) (hier qzvpp im originalpaper immer ma-qzvpp)
 
 | method | MD | MAD | RMSD | SD |
 | --- | ---:| ---:| ---:| ---:|
@@ -224,6 +257,18 @@ Statistics in kcal/mol.
 | PBE0-D4 | -2.01 | 2.05 | 2.80 | 1.95 |
 | PW6B95-D4 | -0.93 | 1.28 | 1.90 | 1.65 |
 
+### CHAL336 / ma-def2-QZVPP
+
+| method | MD | MAD | RMSD | SD |
+| --- | ---:| ---:| ---:| ---:|
+| r²SCAN | |  |  |  |
+| r²SCANh |  |  |  |  |
+| r²SCAN0 | -0.97 | 1.31 | 2.03 | 1.78 |
+| r²SCAN50 |  |  |  |  |
+| wB97X-V |  |  |  |  |
+| PBE0-D4 |  |  |  |  |
+| PW6B95-D4 |  |  |  |  |
+
 ### CHAL336 / def2-TZVPP
 
 | method | MD | MAD | RMSD | SD |
@@ -234,9 +279,7 @@ Statistics in kcal/mol.
 
 ----------------------------------------------------------------
 
-### HB300SPX / def2-QZVPP
-
-Statistics in kcal/mol.
+### HB300SPX / def2-QZVPP (MBU 10.11.2021)
 
 | method | MD | MAD | RMSD | SD |
 | --- | ---:| ---:| ---:| ---:|
@@ -258,9 +301,7 @@ Statistics in kcal/mol.
 
 ----------------------------------------------------------------
 
-### R160x6 / def2-QZVPP
-
-Statistics in kcal/mol.
+### R160x6 / def2-QZVPP (MBU 10.11.2021)
 
 | method | MD | MAD | RMSD | SD |
 | --- | ---:| ---:| ---:| ---:|
@@ -282,9 +323,128 @@ Statistics in kcal/mol.
 
 ----------------------------------------------------------------
 
-### MOR41 / def2-QZVPP (MBU 01.11.2021)
+### LMGB35
 
-Statistics in kcal/mol.
+Statistics in pm.
+
+| method | MD | MAD | RMSD | SD |
+| --- | ---:| ---:| ---:| ---:|
+| r²SCAN-D4-ATM/def2-QZVP | –0.12 | 0.68 | 1.01 | 1.02 |
+| r²SCANh-D4-ATM/def2-QZVP | –0.07 | 1.29 | 2.27 | 2.30 |
+| r²SCANh-D4-ATM/def2-QZVP | 0.01 | 1.25 | 2.27 | 2.30 |
+| r²SCAN0-D4-ATM/def2-QZVP | –0.59 | 1.59 | 2.33 | 2.28 |
+| r²SCAN0-D4-ATM/def2-QZVP | –0.59 | 1.59 | 2.33 | 2.28 |
+| r²SCAN50-D4-ATM/def2-QZVP | –1.36 | 2.09 | 2.78 | 2.45 |
+| r²SCAN50-D4-ATM/def2-QZVP | –1.36 | 2.09 | 2.78 | 2.45 |
+| PBE0-D4/def2-QZVP | –0.55 | 0.92 | 1.41 | 1.31 |
+| PW6B95-D4/def2-QZVP | –0.34 | 1.41 | 2.24 | 2.25 |
+| ωB97X-V/def2-QZVP | 0.01 | 1.33 | 2.27 | 2.30 |
+
+### HMGB11
+
+Statistics in pm.
+
+| method | MD | MAD | RMSD | SD |
+| --- | ---:| ---:| ---:| ---:|
+| r²SCAN-D4-ATM/def2-QZVP | 0.51 | 1.17 | 1.34 | 1.29 |
+| r²SCANh-D4-ATM/def2-QZVP | –0.11 | 1.01 | 1.16 | 1.21 |
+| r²SCANh-D4-ATM/def2-TZVPP | 0.11 | 0.97 | 1.14 | 1.19 |
+| r²SCAN0-D4-ATM/def2-QZVP | –1.16 | 1.16 | 1.53 | 1.06 |
+| r²SCAN0-D4-ATM/def2-TZVPP | –1.14 | 1.15 | 1.53 | 1.07 |
+| r²SCAN50-D4-ATM/def2-QZVP | –2.71 | 2.71 | 2.92 | 1.15 |
+| r²SCAN50-D4-ATM/def2-TZVPP | –2.69 | 2.69 | 2.91 | 1.15 |
+| PBE0-D4/def2-QZVP | –0.49 | 1.07 | 1.21 | 1.16 |
+| PW6B95-D4/def2-QZVP | –0.09 | 1.09 | 1.22 | 1.27 |
+| ωB97X-V/def2-QZVP | –1.44 | 1.54 | 1.77 | 1.09
+
+
+### TMC32
+
+Statistics in pm.
+
+| method | MD | MAD | RMSD | SD |
+| --- | ---:| ---:| ---:| ---:|
+| r²SCAN-D4-ATM/def2-QZVP | –1.57 | 1.89 | 2.35 | 1.77 |
+| r²SCANh-D4-ATM/def2-QZVP | –1.90 | 2.18 | 2.61 | 1.80 |
+| r²SCANh-D4-ATM/def2-TZVPP | –1.94 | 2.22 | 2.65 | 1.82 |
+| r²SCAN0-D4-ATM/def2-QZVP | –2.43 | 2.71 | 3.11 | 1.96 |
+| r²SCAN0-D4-ATM/def2-TZVPP | –2.42 | 2.70 | 3.10 | 1.96 |
+| r²SCAN50-D4-ATM/def2-QZVP | –2.91 | 3.37 | 3.97 | 2.73 |
+| r²SCAN50-D4-ATM/def2-TZVPP | –2.90 | 3.36 | 3.97 | 2.73 |
+| PBE0-D4/def2-QZVP | –2.04 | 2.40 | 2.78 | 1.90 |
+| PW6B95-D4/def2-QZVP | –1.11 | 2.60 | 4.53 | 4.44 |
+| ωB97X-V/def2-QZVP | –1.56 | 2.09 | 2.56 | 2.05 |
+
+
+### ROT34
+
+Statistics in MHz.
+
+| method | MD | MAD | RMSD | SD |
+| --- | ---:| ---:| ---:| ---:|
+| r²SCAN-D4-ATM/def2-QZVP | –3.22 | 4.64 | 5.88 | 4.99 |
+| r²SCANh-D4-ATM/def2-QZVP | 1.92 | 3.00 | 4.33 | 3.94 |
+| r²SCANh-D4-ATM/def2-QZVP | 1.10 | 2.53 | 3.58 | 3.46 |
+| r²SCAN0-D4-ATM/def2-QZVP | 10.46 | 10.46 | 12.76 | 7.40 |
+| r²SCAN0-D4-ATM/def2-QZVP | 10.28 | 10.28 | 12.63 | 7.46 |
+| r²SCAN50-D4-ATM/def2-QZVP | 24.15 | 24.15 | 28.99 | 16.28 |
+| r²SCAN50-D4-ATM/def2-QZVP | 23.96 | 23.96 | 28.87 | 16.35 |
+| PBE0-D4/def2-QZVP | 2.66 | 3.86 | 5.79 | 5.22 |
+| PW6B95-D4/def2-QZVP | 11.71 | 11.71 | 14.92 | 9.38 |
+| ωB97X-V/def2-QZVP | –7.71 | 7.71 | 10.40 | 7.09 |
+
+
+### LB12
+
+Statistics in pm.
+
+| method | MD | MAD | RMSD | SD |
+| --- | ---:| ---:| ---:| ---:|
+| r²SCAN-D4-ATM/def2-QZVP | 1.81 | 3.57 | 5.67 | 5.61 |
+| r²SCANh-D4-ATM/def2-QZVP | 2.33 | 3.88 | 6.00 | 5.77 |
+| r²SCANh-D4-ATM/def2-TZVPP | 1.92 | 4.29 | 6.07 | 6.01 |
+| r²SCAN0-D4-ATM/def2-QZVP | 0.67 | 3.16 | 4.89 | 5.05 |
+| r²SCAN0-D4-ATM/def2-TZVPP | 0.90 | 3.22 | 5.02 | 5.15 |
+| r²SCAN50-D4-ATM/def2-QZVP | –2.24 | 5.48 | 9.03 | 9.14 |
+| r²SCAN50-D4-ATM/def2-TZVPP | –2.05 | 5.98 | 9.08 | 9.24 |
+| PBE0-D4/def2-QZVP | –0.17 | 3.16 | 5.09 | 5.31 |
+| PW6B95-D4/def2-QZVP | –3.05 | 5.96 | 8.25 | 8.00 |
+| ωB97X-V/def2-QZVP | –0.67 | 6.33 | 10.56 | 11.01 |
+
+### CCse21
+
+Bond lengths. Statistics in pm.
+
+| method | MD | MAD | RMSD | SD |
+| --- | ---:| ---:| ---:| ---:|
+| r²SCAN-D4-ATM/def2-QZVP | 0.03 | 0.38 | 0.56 | 0.57 |
+| r²SCANh-D4-ATM/def2-QZVP | –0.26 | 0.43 | 0.62 | 0.57 |
+| r²SCANh-D4-ATM/def2-TZVPP | –0.18 | 0.41 | 0.58 | 0.56 |
+| r²SCAN0-D4-ATM/def2-QZVP | –0.69 | 0.70 | 0.99 | 0.71 |
+| r²SCAN0-D4-ATM/def2-TZVPP | –0.69 | 0.70 | 0.99 | 0.71 |
+| r²SCAN50-D4-ATM/def2-QZVP | –1.34 | 1.34 | 1.68 | 1.02 |
+| r²SCAN50-D4-ATM/def2-TZVPP | –1.34 | 1.34 | 1.68 | 1.02 |
+| PBE0-D4/def2-QZVP | –0.23 | 0.53 | 0.75 | 0.72 |
+| PW6B95-D4/def2-QZVP | –0.60 | 0.60 | 0.81 | 0.56 |
+| ωB97X-V/def2-QZVP | 0.01 | 0.51 | 0.73 | 9.74 |
+
+
+Bond angles. Statistics in deg.
+
+| method | MD | MAD | RMSD | SD |
+| --- | ---:| ---:| ---:| ---:|
+| r²SCAN-D4-ATM/def2-QZVP | 0.01 | 0.29 | 0.37 | 0.37 |
+| r²SCANh-D4-ATM/def2-QZVP | 0.00 | 0.24 | 0.28 | 0.29 |
+| r²SCANh-D4-ATM/def2-TZVPP | –0.01 | 0.24 | 0.29 | 0.30 |
+| r²SCAN0-D4-ATM/def2-QZVP | 0.02 | 0.22 | 0.28 | 0.28 |
+| r²SCAN0-D4-ATM/def2-TZVPP | 0.02 | 0.22 | 0.28 | 0.29 |
+| r²SCAN50-D4-ATM/def2-QZVP | 0.07 | 0.28 | 0.38 | 0.38 |
+| r²SCAN50-D4-ATM/def2-TZVPP | 0.07 | 0.28 | 0.38 | 0.38 |
+| PBE0-D4/def2-QZVP | 0.03 | 0.31 | 0.38 | 0.38 |
+| PW6B95-D4/def2-QZVP | 0.03 | 0.24 | 0.29 | 0.29 |
+| ωB97X-V/def2-QZVP | 0.06 | 0.18 | 0.23 | 0.22 |
+
+### MOR41 / def2-QZVPP (MBU 01.11.2021)
 
 | method | MD | MAD | RMSD | SD |
 | --- | ---:| ---:| ---:| ---:|
@@ -292,9 +452,11 @@ Statistics in kcal/mol.
 | r²SCANh | -0.52 | 2.54 | 3.47 | 3.47 |
 | r²SCAN0 | 0.09 | 2.31 | 2.91 | 2.90 |
 | r²SCAN50 | 0.19 | 3.19 | 4.20 | 4.20 |
-| wB97X-V |  | 2.21	 |  |  |
-| PBE0-D4 | –0.25 | 2.28 | 3.08 | 3.11 |
+| wB97X-V |  | 2.21	 |  |  |  (MOR41 paper)
+| PBE0-D4 | –0.25 | 2.28 | 3.08 | 3.11 | <-- def2-QZVPP from DFT-D4 paper -->
 | PW6B95-D4 | 2.68 | 3.20 | 3.99 | 2.98 |
+
+<!-- MOR41 energies mit neu gerechnetem D4, erstaunlicherweise wesentlich schlechter als D3 (2.70 laut webtable -->
 
 ### MOR41 / def2-TZVPP
 
@@ -306,9 +468,7 @@ Statistics in kcal/mol.
 
 ----------------------------------------------------------------
 
-### ROST61 / def2-QZVPP
-
-Statistics in kcal/mol.
+### ROST61 / def2-QZVPP (MBU 08.11.2021)
 
 | method | MD | MAD | RMSD | SD |
 | --- | ---:| ---:| ---:| ---:|
@@ -326,13 +486,11 @@ Statistics in kcal/mol.
 | --- | ---:| ---:| ---:| ---:|
 | r²SCANh | 0.23 | 3.17 | 4.29 | 4.28 |
 | r²SCAN0 | -0.62 | 3.42 | 4.72 | 4.68 |
-| r²SCAN50 |  |  |  |  |   
+| r²SCAN50 |  |  |  |  |                          MISSING
 
 ----------------------------------------------------------------
 
-### WCCR10 / def2-QZVPP
-
-Statistics in kcal/mol.
+### WCCR10 / def2-QZVPP (MBU 01.11.2021)
 
 | method | MD | MAD | RMSD | SD |
 | --- | ---:| ---:| ---:| ---:|
@@ -354,9 +512,7 @@ Statistics in kcal/mol.
 
 ----------------------------------------------------------------
 
-### MOBH35 / def2-QZVPP
-
-Statistics in kcal/mol.
+### MOBH35 / def2-QZVPP (MBU 01.11.2021)
 
 | method | MD | MAD | RMSD | SD |
 | --- | ---:| ---:| ---:| ---:|
@@ -378,9 +534,7 @@ Statistics in kcal/mol.
 
 ----------------------------------------------------------------
 
-### TMBH / def2-QZVPP
-
-Statistics in kcal/mol.
+### TMBH / def2-QZVPP (MBU 03.11.2021)
 
 | method | MD | MAD | RMSD | SD |
 | --- | ---:| ---:| ---:| ---:|
@@ -402,9 +556,7 @@ Statistics in kcal/mol.
 
 ----------------------------------------------------------------
 
-### MLA24 / def2-QZVPP
-
-Statistics in kcal/mol.
+### MLA24 / def2-QZVPP (MBU 03.11.2021) former name: PExMPEx
 
 | method | MD | MAD | RMSD | SD |
 | --- | ---:| ---:| ---:| ---:|
@@ -427,19 +579,17 @@ Statistics in kcal/mol.
 ----------------------------------------------------------------
 
 
-### IONPI19 / def2-QZVPP
-
-Statistics in kcal/mol.
+### IONPI19 / def2-QZVPP (MBU 03.11.2021)
 
 | method | MD | MAD | RMSD | SD |
 | --- | ---:| ---:| ---:| ---:|
-| r²SCAN | -0.06 | 0.72 | 0.85 | 0.85 |
+| r²SCAN | -0.06 | 0.72 | 0.85 | 0.85 | (MAD 0.71 im paper)
 | r²SCANh | -0.07 | 0.67 | 0.80 | 0.80 |
 | r²SCAN0 | -0.13 | 0.71 | 0.82 | 0.81 |
 | r²SCAN50 | -0.27 | 0.84 | 1.12 | 1.09 |
 | wB97X-V |  | 0.73 |  |  |
 | PBE0-D4 |  | 0.88 |  |  |
-| PW6B95-D4 |  | 0.83 |  |  |
+| PW6B95-D4 |  | 0.83 |  |  | (IONPI paper SI Tab S15 Korrekt? Spichi fragen!)
 
 ### IONPI19 / def2-TZVPP
 
@@ -451,9 +601,7 @@ Statistics in kcal/mol.
 
 ----------------------------------------------------------------
 
-### ACONF12 / def2-QZVPP
-
-Statistics in kcal/mol.
+### ACONF12 / def2-QZVPP (MBU 08.11.2021)
 
 | method | MD | MAD | RMSD | SD |
 | --- | ---:| ---:| ---:| ---:|
@@ -475,9 +623,7 @@ Statistics in kcal/mol.
 
 ----------------------------------------------------------------
 
-### MPCONF196 / def2-QZVPP
-
-Statistics in kcal/mol.
+### MPCONF196 / def2-QZVPP (MBU 08.11.2021)
 
 | method | MD | MAD | RMSD | SD |
 | --- | ---:| ---:| ---:| ---:|
@@ -499,9 +645,7 @@ Statistics in kcal/mol.
 
 ----------------------------------------------------------------
 
-### 37CONF8 / def2-QZVPP
-
-Statistics in kcal/mol.
+### 37CONF8 / def2-QZVPP (MBU 08.11.2021)
 
 | method | MD | MAD | RMSD | SD |
 | --- | ---:| ---:| ---:| ---:|
@@ -523,9 +667,7 @@ Statistics in kcal/mol.
 
 ----------------------------------------------------------------
 
-### TMCONF16 / def2-QZVPP
-
-Statistics in kcal/mol.
+### TMCONF16 / def2-QZVPP (MBU 01.11.2021)
 
 | method | MD | MAD | RMSD | SD |
 | --- | ---:| ---:| ---:| ---:|
@@ -549,8 +691,6 @@ Statistics in kcal/mol.
 
 ### SIE8 (remaining systems of old GMTKN SIE11 subset)
 
-Statistics in kcal/mol.
-
 | method | MD | MAD | RMSD | SD |
 | --- | ---:| ---:| ---:| ---:|
 | r²SCAN | 9.24 | 9.79 | 13.44 | 9.75 |
@@ -569,105 +709,20 @@ Statistics in kcal/mol.
 
 ----------------------------------------------------------------
 
-### LMGB35
-
-Statistics in pm.
+| method | MD | MAD | RMSD | SD |
+| --- | ---:| ---:| ---:| ---:|
+| r²SCAN |  |  |  |  |
+| r²SCANh |  |  |  |  |
+| r²SCAN0 |  |  |  |  |
+| r²SCAN50 |  |  |  |  |
+| wB97X-V |  |  |  |  |
+| PBE0-D4 |  |  |  |  |
+| PW6B95-D4 |  |  |  |  |
 
 | method | MD | MAD | RMSD | SD |
 | --- | ---:| ---:| ---:| ---:|
-| r²SCAN-D4-ATM/def2-QZVP | –0.12 | 0.68 | 1.01 | 1.02 |
-| r²SCANh-D4-ATM/def2-QZVP | –0.07 | 1.28 | 2.26 | 2.29 |
-| r²SCAN0-D4-ATM/def2-QZVP | –0.59 | 1.59 | 2.33 | 2.29 |
-| r²SCAN50-D4-ATM/def2-QZVP | –1.35 | 2.09 | 2.77 | 2.45 |
-| PBE0-D4/def2-QZVP | –0.55 | 0.92 | 1.41 | 1.31 |
-| PW6B95-D4/def2-QZVP | –0.34 | 1.41 | 2.24 | 2.25 |
-| ωB97X-V/def2-QZVP | 0.01 | 1.33 | 2.27 | 2.30 |
+| r²SCANh |  |  |  |  |
+| r²SCAN0 |  |  |  |  |
+| r²SCAN50 |  |  |  |  |
 
-### HMGB11
-
-Statistics in pm.
-
-| method | MD | MAD | RMSD | SD |
-| --- | ---:| ---:| ---:| ---:|
-| r²SCAN-D4-ATM/def2-QZVP | 0.51 | 1.17 | 1.34 | 1.29 |
-| r²SCANh-D4-ATM/def2-QZVP | –0.13 | 1.02 | 1.18 | 1.23 |
-| r²SCAN0-D4-ATM/def2-QZVP | –1.16 | 1.16 | 1.55 | 1.07 |
-| r²SCAN50-D4-ATM/def2-QZVP | –2.70 | 2.70 | 2.91 | 1.15 |
-| PBE0-D4/def2-QZVP | –0.49 | 1.07 | 1.21 | 1.16 |
-| PW6B95-D4/def2-QZVP | –0.09 | 1.09 | 1.22 | 1.27 |
-| ωB97X-V/def2-QZVP | –1.44 | 1.54 | 1.77 | 1.09
-
-
-### TMC32
-
-Statistics in pm.
-
-| method | MD | MAD | RMSD | SD |
-| --- | ---:| ---:| ---:| ---:|
-| r²SCAN-D4-ATM/def2-QZVP | –1.57 | 1.89 | 2.35 | 1.77 |
-| r²SCANh-D4-ATM/def2-QZVP | –1.90 | 2.18 | 2.61 | 1.80 |
-| r²SCAN0-D4-ATM/def2-QZVP | –2.43 | 2.71 | 3.11 | 1.96 |
-| r²SCAN50-D4-ATM/def2-QZVP | –2.91 | 3.36 | 3.97 | 2.73 |
-| PBE0-D4/def2-QZVP | –2.04 | 2.40 | 2.78 | 1.90 |
-| PW6B95-D4/def2-QZVP | –1.11 | 2.60 | 4.53 | 4.44 |
-| ωB97X-V/def2-QZVP | –1.56 | 2.09 | 2.56 | 2.05 |
-
-
-### ROT34
-
-Statistics in MHz.
-
-| method | MD | MAD | RMSD | SD |
-| --- | ---:| ---:| ---:| ---:|
-| r²SCAN-D4-ATM/def2-QZVP | –3.22 | 4.64 | 5.88 | 4.99 |
-| r²SCANh-D4-ATM/def2-QZVP | –1.92 | 3.00 | 4.33 | 3.94 |
-| r²SCAN0-D4-ATM/def2-QZVP | –10.46 | 10.46 | 12.76 | 7.40 |
-| r²SCAN50-D4-ATM/def2-QZVP | –24.15 | 14.15 | 28.99 | 16.28 |
-| PBE0-D4/def2-QZVP | 2.66 | 3.86 | 5.79 | 5.22 |
-| PW6B95-D4/def2-QZVP | 11.71 | 11.71 | 14.92 | 9.38 |
-| ωB97X-V/def2-QZVP | –7.71 | 7.71 | 10.40 | 7.09 |
-
-
-### LB12
-
-Statistics in pm.
-
-| method | MD | MAD | RMSD | SD |
-| --- | ---:| ---:| ---:| ---:|
-| r²SCAN-D4-ATM/def2-QZVP | 1.81 | 3.57 | 5.67 | 5.61 |
-| r²SCANh-D4-ATM/def2-QZVP | 2.33 | 3.88 | 6.00 | 5.77 |
-| r²SCAN0-D4-ATM/def2-QZVP | 0.67 | 3.16 | 4.89 | 5.05 |
-| r²SCAN50-D4-ATM/def2-QZVP | –2.24 | 5.48 | 9.03 | 9.14 |
-| PBE0-D4/def2-QZVP | –0.17 | 3.16 | 5.09 | 5.31 |
-| PW6B95-D4/def2-QZVP | –3.05 | 5.96 | 8.25 | 8.00 |
-| ωB97X-V/def2-QZVP | –0.67 | 6.33 | 10.56 | 11.01 |
-
-### CCse21
-
-Bond lengths. Statistics in pm.
-
-| method | MD | MAD | RMSD | SD |
-| --- | ---:| ---:| ---:| ---:|
-| r²SCAN-D4-ATM/def2-QZVP | 0.03 | 0.38 | 0.56 | 0.57 |
-| r²SCANh-D4-ATM/def2-QZVP | –0.26 | 0.43 | 0.62 | 0.57 |
-| r²SCAN0-D4-ATM/def2-QZVP | –0.69 | 0.70 | 0.99 | 0.71 |
-| r²SCAN50-D4-ATM/def2-QZVP | –1.34 | 1.34 | 1.68 | 1.02 |
-| PBE0-D4/def2-QZVP | –0.23 | 0.53 | 0.75 | 0.72 |
-| PW6B95-D4/def2-QZVP | –0.60 | 0.60 | 0.81 | 0.56 |
-| ωB97X-V/def2-QZVP | 0.01 | 0.51 | 0.73 | 9.74 |
-
-
-Bond angles. Statistics in deg.
-
-| method | MD | MAD | RMSD | SD |
-| --- | ---:| ---:| ---:| ---:|
-| r²SCAN-D4-ATM/def2-QZVP | 0.01 | 0.29 | 0.37 | 0.37 |
-| r²SCANh-D4-ATM/def2-QZVP | 0.00 | 0.24 | 0.28 | 0.29 |
-| r²SCAN0-D4-ATM/def2-QZVP | 0.02 | 0.22 | 0.28 | 0.28 |
-| r²SCAN50-D4-ATM/def2-QZVP | 0.07 | 0.28 | 0.38 | 0.38 |
-| PBE0-D4/def2-QZVP | 0.03 | 0.31 | 0.38 | 0.38 |
-| PW6B95-D4/def2-QZVP | 0.03 | 0.24 | 0.29 | 0.29 |
-| ωB97X-V/def2-QZVP | 0.06 | 0.18 | 0.23 | 0.22 |
-
-
-
+----------------------------------------------------------------
