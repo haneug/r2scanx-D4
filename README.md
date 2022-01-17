@@ -38,7 +38,7 @@
 
 ## Benchmark Results
 
-### NCIBLIND ToDO
+### NCIBLIND
 
 Statistics in kcal/mol, Gini coefficients are dimensionless.
 
@@ -50,7 +50,7 @@ Statistics in kcal/mol, Gini coefficients are dimensionless.
 | r²SCAN50-D4-ATM/def2-QZVP | -0.102 | 0.256 | 0.460 | 0.451 | |
 
 
-### S22x5 ToDO
+### S22x5
 
 Statistics in kcal/mol, Gini coefficients are dimensionless.
 
@@ -61,7 +61,7 @@ Statistics in kcal/mol, Gini coefficients are dimensionless.
 | r²SCAN0 | -0.199 | 0.353 | 0.658 | 0.630 | |
 | r²SCAN50 | -0.282 | 0.466 | 0.859 | 0.815 | |
 
-### S66x8 ToDO
+### S66x8
 
 Statistics in kcal/mol, Gini coefficients are dimensionless.
 
@@ -91,6 +91,21 @@ Statistics in kcal/mol.
 | r²SCANh-D4/def2-QZVP | 3.80 | 3.89 | 4.21 | 4.95 | 3.41 | 2.82 | 3.15 |
 | r²SCAN0-D4/def2-QZVP | 3.47 | 3.81 | 3.94 | 3.73 | 3.19 | 2.48 | 2.89 |
 | r²SCAN50-D4/def2-QZVP  | 3.81 | 4.40 | 4.86 | 3.10 | 3.22 | 2.91 | 3.09 |
+
+*With D4 Parameters from https://doi.org/10.3390/molecules27010141 
+
+| method | WTMAD-2 | basic | react. | barriers | inter. NCI | intra. NCI | NCI |
+| --- | ---:| ---:| ---:| ---:| ---:| ---:| ---:|
+| r²SCANh-D4/def2-QZVP* | 6.04 | 4.4 | 7.44 | 10.99 | 5.46 | 4.86 | 5.17 |
+| r²SCAN0-D4/def2-QZVP* | 5.45 | 4.91 | 6.86 | 7.53 | 4.75 | 4.51 | 4.63 |
+| r²SCAN50-D4/def2-QZVP* | 6.17 | 6.6 | 8.42 | 5.97 | 4.76 | 5.22 | 4.99 |
+
+
+| method | WTMAD-1 | basic | react. | barriers | inter. NCI | intra. NCI | NCI |
+| --- | ---:| ---:| ---:| ---:| ---:| ---:| ---:|
+| r²SCANh-D4/def2-QZVP* | 3.77 | 3.88 | 4.27 | 4.91 | 3.32 | 2.78 | 3.09 |
+| r²SCAN0-D4/def2-QZVP* | 3.43 | 3.8 | 3.94 | 3.7 | 3.05 | 2.48 | 2.8 |
+| r²SCAN50-D4/def2-QZVP* | 3.79 | 4.41 | 4.86 | 3.1 | 3.1 | 2.94 | 3.03 |
 
 The MADs of all GMTKN55 subsets in kcal/mol are given here.
 Values for TPSS-D4, PBE-D4 and PBE0-D4 are taken from Caldeweyher et al. *J. Chem Phys*, **2019**, 150, 154122. DOI: [10.1063/1.5090222](https://doi.org/10.1063/1.5090222). Values for r²SCAN-D4 are taken from Ehlert et al. *J. Chem. Phys.* **2021**, 154, 061101. DOI: [10.1063/5.0041008](https://doi.org/10.1063/5.0041008)
