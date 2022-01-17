@@ -42,12 +42,12 @@
 
 Statistics in kcal/mol, Gini coefficients are dimensionless.
 
-| method | MD | MAD | RMSD | SD | Gini |
+| method | MD | MAD | RMSD | SD |
 | --- | ---:| ---:| ---:| ---:| ---: |
-| r²SCAN-D4-ATM/def2-QZVP | –0.05 | 0.17 | 0.29 | 0.29 | 0.64 |
-| r²SCANh-D4-ATM/def2-QZVP | -0.059 | 0.179 | 0.316 | 0.313 | |
-| r²SCAN0-D4-ATM/def2-QZVP | -0.071 | 0.200 | 0.357 | 0.353 | |
-| r²SCAN50-D4-ATM/def2-QZVP | -0.102 | 0.256 | 0.460 | 0.451 | |
+| r²SCAN-D4-ATM/def2-QZVP | –0.05 | 0.17 | 0.29 | 0.29 |
+| r²SCANh-D4-ATM/def2-QZVP | -0.06 | 0.18 | 0.32 | 0.31  |
+| r²SCAN0-D4-ATM/def2-QZVP | -0.07 | 0.20 | 0.36 | 0.35  |
+| r²SCAN50-D4-ATM/def2-QZVP | -0.10 | 0.26 | 0.46 | 0.45  |
 
 
 ### S22x5
@@ -57,9 +57,9 @@ Statistics in kcal/mol, Gini coefficients are dimensionless.
 | method | MD | MAD | RMSD | SD | Gini |
 | --- | ---:| ---:| ---:| ---:| ---: |
 | r²SCAN-D4-ATM/def2-QZVP | –0.12 | 0.28 | 0.51 | 0.50 | 0.65 |
-| r²SCANh | -0.155 | 0.303 | 0.565 | 0.546 | |
-| r²SCAN0 | -0.199 | 0.353 | 0.658 | 0.630 | |
-| r²SCAN50 | -0.282 | 0.466 | 0.859 | 0.815 | |
+| r²SCANh | -0.16 | 0.30 | 0.57 | 0.55 | 
+| r²SCAN0 | -0.20 | 0.35 | 0.66 | 0.63 | 
+| r²SCAN50 | -0.28 | 0.47 | 0.86 | 0.82 | 
 
 ### S66x8
 
@@ -68,9 +68,9 @@ Statistics in kcal/mol, Gini coefficients are dimensionless.
 | method | MD | MAD | RMSD | SD | Gini |
 | --- | ---:| ---:| ---:| ---:| ---: |
 | r²SCAN-D4-ATM/def2-QZVP | –0.09 | 0.23 | 0.38 | 0.36 | 0.56 |
-| r²SCANh | -0.112 | 0.244 | 0.406 | 0.391 | |
-| r²SCAN0 | -0.133 | 0.274 | 0.463 | 0.444 | |
-| r²SCAN50 | -0.180 | 0.352 | 0.600 | 0.573 | |
+| r²SCANh | -0.11 | 0.24 | 0.41 | 0.39 | 
+| r²SCAN0 | -0.13 | 0.27 | 0.46 | 0.44 | 
+| r²SCAN50 | -0.18 | 0.35 | 0.60 | 0.57 | 
 
 
 ### GMTKN55
