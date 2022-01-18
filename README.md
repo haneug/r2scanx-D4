@@ -4,9 +4,9 @@
 ## Functional Implementation
 
 - r²SCANX-D4 functionals can be build in Orca and Turbomole via the LibXC
-- r²SCAN can be used with [libxc version 5.1.0](https://www.tddft.org/programs/libxc/changes/#510---2021-01-19) as `MGGA_X_R2SCAN` (id=497), `MGGA_C_R2SCAN` (id=498)
-- [XCFun 2.1.0](https://github.com/dftlibs/xcfun/releases/tag/v2.1.0) also implements support for the r²SCAN functional
-- routines for r²SCAN functional implementation can be found at https://gitlab.com/dhamil/r2scan-subroutines (Fortran), routines for Vasp are included
+- r²SCANh-D4/def2-QZVPP* can be used with [libxc version 5.1.0](https://www.tddft.org/programs/libxc/changes/#510---2021-01-19) as `MGGA_X_R2SCAN` (id=497), `MGGA_C_R2SCAN` (id=498)
+- [XCFun 2.1.0](https://github.com/dftlibs/xcfun/releases/tag/v2.1.0) also implements support for the r²SCANh-D4/def2-QZVPP* functional
+- routines for r²SCANh-D4/def2-QZVPP* functional implementation can be found at https://gitlab.com/dhamil/r2scan-subroutines (Fortran), routines for Vasp are included
 - Libraries implementing DFT-D4 can be found at https://github.com/dftd4/dftd4 (Fortran) and https://github.com/dftd4/cpp-d4 (C++)
 
 
@@ -57,18 +57,18 @@ Statistics in kcal/mol
 | method | MD | MAD | RMSD | SD |
 | --- | ---:| ---:| ---:| ---:|
 | r²SCAN-D4-ATM/def2-QZVP | –0.12 | 0.28 | 0.51 | 0.50 |
-| r²SCANh | -0.16 | 0.30 | 0.57 | 0.55 |
-| r²SCAN0 | -0.20 | 0.35 | 0.66 | 0.63 |
-| r²SCAN50 | -0.28 | 0.47 | 0.86 | 0.82 |
+| r²SCANh-D4-ATM/def2-QZVP | -0.16 | 0.30 | 0.57 | 0.55 |
+| r²SCAN0-D4-ATM/def2-QZVP | -0.20 | 0.35 | 0.66 | 0.63 |
+| r²SCAN50-D4-ATM/def2-QZVP | -0.28 | 0.47 | 0.86 | 0.82 |
 
 ### S66x8
 
 | method | MD | MAD | RMSD | SD |
 | --- | ---:| ---:| ---:| ---:|
 | r²SCAN-D4-ATM/def2-QZVP | –0.09 | 0.23 | 0.38 | 0.36 |
-| r²SCANh | -0.11 | 0.24 | 0.41 | 0.39 |
-| r²SCAN0 | -0.13 | 0.27 | 0.46 | 0.44 |
-| r²SCAN50 | -0.18 | 0.35 | 0.60 | 0.57 |
+| r²SCANh-D4-ATM/def2-QZVP | -0.11 | 0.24 | 0.41 | 0.39 |
+| r²SCAN0-D4-ATM/def2-QZVP | -0.13 | 0.27 | 0.46 | 0.44 |
+| r²SCAN50-D4-ATM/def2-QZVP | -0.18 | 0.35 | 0.60 | 0.57 |
 
 
 ### GMTKN55
@@ -106,9 +106,9 @@ Statistics in kcal/mol.
 | r²SCAN50-D4/def2-QZVP* | 3.79 | 4.41 | 4.86 | 3.1 | 3.1 | 2.94 | 3.03 |
 
 The MADs of all GMTKN55 subsets in kcal/mol are given here.
-Values for TPSS-D4, PBE-D4 and PBE0-D4 are taken from Caldeweyher et al. *J. Chem Phys*, **2019**, 150, 154122. DOI: [10.1063/1.5090222](https://doi.org/10.1063/1.5090222). Values for r²SCAN-D4 are taken from Ehlert et al. *J. Chem. Phys.* **2021**, 154, 061101. DOI: [10.1063/5.0041008](https://doi.org/10.1063/5.0041008)
+Values for TPSS-D4, PBE-D4 and PBE0-D4/def2-QZVPP are taken from Caldeweyher et al. *J. Chem Phys*, **2019**, 150, 154122. DOI: [10.1063/1.5090222](https://doi.org/10.1063/1.5090222). Values for r²SCAN-D4 are taken from Ehlert et al. *J. Chem. Phys.* **2021**, 154, 061101. DOI: [10.1063/5.0041008](https://doi.org/10.1063/5.0041008)
 
-| subset | r²SCAN-D4 | r²SCANh-D4 | r²SCAN0-D4 | r²SCAN50-D4  | TPSS-D4 | PBE-D4 | PBE0-D4 |
+| subset | r²SCAN-D4 | r²SCANh-D4 | r²SCAN0-D4 | r²SCAN50-D4  | TPSS-D4 | PBE-D4 | PBE0-D4/def2-QZVPP |
 | --- | ---:| ---:| ----:| ---:| ---:| ---:| ---:|
 | W4-11 | 3.86 | 4.58 | 11.35 | 22.62 | 5.89 | 15.62 | 3.67 |
 | G21EA | 5.64 | 3.93 | 4.61 | 6.00 | 2.12 | 3.59 | 2.57 |
@@ -192,25 +192,25 @@ Statistics in kcal/mol.
 
 | method | MD | MAD | RMSD | SD |
 | --- | ---:| ---:| ---:| ---:|
-| r²SCAN | 0.36 | 1.59 | 1.70 | 1.66 |
-| r²SCANh | 0.34 | 1.54 | 1.69 | 1.66 |
-| r²SCAN0 | 0.45 | 1.60 | 1.82 | 1.76 |
-| r²SCAN50 | 0.73 | 1.86 | 2.20 | 2.08 |
-| wB97X-V | -0.86 | 0.86 | 1.31 | 0.99 |
-| PBE0-D4 | –0.27 | 0.56 | 0.63 | 0.61 |
-| PW6B95-D4 | 0.95 | 1.11 | 1.52 | 1.28 |
-| r²SCANh* | -0.33 | 1.05 | 1.46 | 1.42 |
-| r²SCAN0* | -0.65 | 1.10 | 1.59 | 1.45 |
-| r²SCAN50* | -0.35 | 1.15 | 1.75 | 1.72 |
+| r²SCAN-D4/def2-QZVPP | 0.36 | 1.59 | 1.70 | 1.66 |
+| r²SCANh-D4/def2-QZVPP | 0.34 | 1.54 | 1.69 | 1.66 |
+| r²SCAN0-D4/def2-QZVPP | 0.45 | 1.60 | 1.82 | 1.76 |
+| r²SCAN50-D4/def2-QZVPP | 0.73 | 1.86 | 2.20 | 2.08 |
+| wB97X-V/def2-QZVPP | -0.86 | 0.86 | 1.31 | 0.99 |
+| PBE0-D4/def2-QZVPP | –0.27 | 0.56 | 0.63 | 0.61 |
+| PW6B95-D4/def2-QZVPP | 0.95 | 1.11 | 1.52 | 1.28 |
+| r²SCANh-D4/def2-QZVPP* | -0.33 | 1.05 | 1.46 | 1.42 |
+| r²SCAN0-D4/def2-QZVPP* | -0.65 | 1.10 | 1.59 | 1.45 |
+| r²SCAN50-D4/def2-QZVPP* | -0.35 | 1.15 | 1.75 | 1.72 |
 
 
 ### L7 / def2-TZVPP
 
 | method | MD | MAD | RMSD | SD |
 | --- | ---:| ---:| ---:| ---:|
-| r²SCANh | 0.62 | 1.90 | 2.07 | 1.97 |
-| r²SCAN0 | 0.71 | 1.93 | 2.17 | 2.05 |
-| r²SCAN50 | 0.99 | 2.17 | 2.54 | 2.35 |
+| r²SCANh-D4/def2-TZVPP | 0.62 | 1.90 | 2.07 | 1.97 |
+| r²SCAN0-D4/def2-TZVPP | 0.71 | 1.93 | 2.17 | 2.05 |
+| r²SCAN50-D4/def2-TZVPP | 0.99 | 2.17 | 2.54 | 2.35 |
 
 ----------------------------------------------------------------
 
@@ -220,25 +220,25 @@ Statistics in kcal/mol. def2-QZVPP and def2-TZVPP
 
 | method | MD | MAD | RMSD | SD |
 | --- | ---:| ---:| ---:| ---:|
-| r²SCAN | -1.83 | 1.92 | 2.60 | 1.84 |
-| r²SCANh | -1.93 | 2.01 | 2.61 | 1.76 |
-| r²SCAN0 | -1.78 | 2.01 | 2.50 | 1.75 |
-| r²SCAN50 | -1.58 | 2.04 | 2.46 | 1.88 |
-| wB97X-D3 |  | 2.6 |  |  |      ACHTUNG!!! D3 value from original publication as calcs still running
-| PBE0-D4 | -1.81 | 2.59 | 3.34 | 2.81 |  => RIJCOSX
-| PW6B95-D4 | 1.53 | 2.45 | 2.87 | 2.47 |
-| r²SCANh* | -3.86 | 3.86 | 4.78 | 2.82 |
-| r²SCAN0* | -4.36 | 4.36 | 5.29 | 2.99 |
-| r²SCAN50* | -3.62 | 3.74 | 4.33 | 2.38 |
+| r²SCAN-D4/def2-QZVPP | -1.83 | 1.92 | 2.60 | 1.84 |
+| r²SCANh-D4/def2-QZVPP | -1.93 | 2.01 | 2.61 | 1.76 |
+| r²SCAN0-D4/def2-QZVPP | -1.78 | 2.01 | 2.50 | 1.75 |
+| r²SCAN50-D4/def2-QZVPP | -1.58 | 2.04 | 2.46 | 1.88 |
+| wB97X-D3/def2-QZVPP |  | 2.6 |  |  |      ACHTUNG!!! D3 value from original publication as calcs still running
+| PBE0-D4/def2-QZVPP | -1.81 | 2.59 | 3.34 | 2.81 |  => RIJCOSX
+| PW6B95-D4/def2-QZVPP | 1.53 | 2.45 | 2.87 | 2.47 |
+| r²SCANh-D4/def2-QZVPP* | -3.86 | 3.86 | 4.78 | 2.82 |
+| r²SCAN0-D4/def2-QZVPP* | -4.36 | 4.36 | 5.29 | 2.99 |
+| r²SCAN50-D4/def2-QZVPP* | -3.62 | 3.74 | 4.33 | 2.38 |
 
 
 ### S30L / def2-TZVPP
 
 | method | MD | MAD | RMSD | SD |
 | --- | ---:| ---:| ---:| ---:|
-| r²SCANh | -1.67 | 1.87 | 2.45 | 1.79 |
-| r²SCAN0 | -1.57 | 1.85 | 2.35 | 1.76 |
-| r²SCAN50 | -1.35 | 1.89 | 2.41 | 2.00 |
+| r²SCANh-D4/def2-TZVPP | -1.67 | 1.87 | 2.45 | 1.79 |
+| r²SCAN0-D4/def2-TZVPP | -1.57 | 1.85 | 2.35 | 1.76 |
+| r²SCAN50-D4/def2-TZVPP | -1.35 | 1.89 | 2.41 | 2.00 |
 
 ----------------------------------------------------------------
 
@@ -248,16 +248,16 @@ Statistics in kcal/mol.
 
 | method | MD | MAD | RMSD | SD |
 | --- | ---:| ---:| ---:| ---:|
-| r²SCAN | -0.09 | 0.30 | 0.57 | 0.56 |
-| r²SCANh | -0.07 | 0.30 | 0.57 | 0.56 |
-| r²SCAN0 | -0.06 | 0.31 | 0.58 | 0.57 |
-| r²SCAN50 | -0.07 | 0.34 | 0.62 | 0.62 |
-| wB97X-V | 0.17 | 0.26 | 0.47 | 0.44 |
-| PBE0-D4 | -0.16 | 0.32 | 0.55 | 0.52 |
-| PW6B95-D4 | 0.07 | 0.21 | 0.31 | 0.30 |
-| r²SCANh* | -0.13 | 0.30 | 0.56 | 0.54 |
-| r²SCAN0* | -0.13 | 0.30 | 0.56 | 0.54 |
-| r²SCAN50* | -0.15 | 0.32 | 0.60 | 0.59 |
+| r²SCAN-D4/def2-QZVPP | -0.09 | 0.30 | 0.57 | 0.56 |
+| r²SCANh-D4/def2-QZVPP | -0.07 | 0.30 | 0.57 | 0.56 |
+| r²SCAN0-D4/def2-QZVPP | -0.06 | 0.31 | 0.58 | 0.57 |
+| r²SCAN50-D4/def2-QZVPP | -0.07 | 0.34 | 0.62 | 0.62 |
+| wB97X-V/def2-QZVPP | 0.17 | 0.26 | 0.47 | 0.44 |
+| PBE0-D4/def2-QZVPP | -0.16 | 0.32 | 0.55 | 0.52 |
+| PW6B95-D4/def2-QZVPP | 0.07 | 0.21 | 0.31 | 0.30 |
+| r²SCANh-D4/def2-QZVPP* | -0.13 | 0.30 | 0.56 | 0.54 |
+| r²SCAN0-D4/def2-QZVPP* | -0.13 | 0.30 | 0.56 | 0.54 |
+| r²SCAN50-D4/def2-QZVPP* | -0.15 | 0.32 | 0.60 | 0.59 |
 
 
 
@@ -265,9 +265,9 @@ Statistics in kcal/mol.
 
 | method | MD | MAD | RMSD | SD |
 | --- | ---:| ---:| ---:| ---:|
-| r²SCANh | -0.17 | 0.35 | 0.66 | 0.63 |
-| r²SCAN0 | -0.15 | 0.35 | 0.66 | 0.64 |
-| r²SCAN50 | -0.16 | 0.37 | 0.70 | 0.68 |
+| r²SCANh-D4/def2-TZVPP | -0.17 | 0.35 | 0.66 | 0.63 |
+| r²SCAN0-D4/def2-TZVPP | -0.15 | 0.35 | 0.66 | 0.64 |
+| r²SCAN50-D4/def2-TZVPP | -0.16 | 0.37 | 0.70 | 0.68 |
 
 ----------------------------------------------------------------
 
@@ -275,16 +275,16 @@ Statistics in kcal/mol.
 
 | method | MD | MAD | RMSD | SD |
 | --- | ---:| ---:| ---:| ---:|
-| r²SCAN | -1.67 | 1.90 | 2.81 | 2.25 |
-| r²SCANh | -1.54 | 1.75 | 2.62 | 2.12 |
-| r²SCAN0 | -1.48 | 1.67 | 2.54 | 2.06 |
-| r²SCAN50 | -1.50 | 1.69 | 2.70 | 2.24 |
-| wB97X-V | -0.11 | 0.89 | 1.31 | 1.31 |
-| PBE0-D4 | -2.01 | 2.05 | 2.80 | 1.95 |
-| PW6B95-D4 | -0.93 | 1.28 | 1.90 | 1.65 |
-| r²SCANh* | -1.77 | 1.85 | 2.71 | 2.06 |
-| r²SCAN0* | -1.72 | 1.78 | 2.64 | 2.00 |
-| r²SCAN50* | -1.73 | 1.80 | 2.82 | 2.22 |
+| r²SCAN-D4/def2-QZVPP | -1.67 | 1.90 | 2.81 | 2.25 |
+| r²SCANh-D4/def2-QZVPP | -1.54 | 1.75 | 2.62 | 2.12 |
+| r²SCAN0-D4/def2-QZVPP | -1.48 | 1.67 | 2.54 | 2.06 |
+| r²SCAN50-D4/def2-QZVPP | -1.50 | 1.69 | 2.70 | 2.24 |
+| wB97X-V/def2-QZVPP | -0.11 | 0.89 | 1.31 | 1.31 |
+| PBE0-D4/def2-QZVPP | -2.01 | 2.05 | 2.80 | 1.95 |
+| PW6B95-D4/def2-QZVPP | -0.93 | 1.28 | 1.90 | 1.65 |
+| r²SCANh-D4/def2-QZVPP* | -1.77 | 1.85 | 2.71 | 2.06 |
+| r²SCAN0-D4/def2-QZVPP* | -1.72 | 1.78 | 2.64 | 2.00 |
+| r²SCAN50-D4/def2-QZVPP* | -1.73 | 1.80 | 2.82 | 2.22 |
 
 
 
@@ -292,21 +292,21 @@ Statistics in kcal/mol.
 
 | method | MD | MAD | RMSD | SD |
 | --- | ---:| ---:| ---:| ---:|
-| r²SCAN | |  |  |  |
-| r²SCANh |  |  |  |  |
-| r²SCAN0 | -0.97 | 1.31 | 2.03 | 1.78 |
-| r²SCAN50 |  |  |  |  |
-| wB97X-V |  |  |  |  |
-| PBE0-D4 |  |  |  |  |
-| PW6B95-D4 |  |  |  |  |
+| r²SCANh-D4/def2-QZVPP* | |  |  |  |
+| r²SCANh-D4/def2-QZVPP |  |  |  |  |
+| r²SCAN0-D4/def2-QZVPP | -0.97 | 1.31 | 2.03 | 1.78 |
+| r²SCAN50-D4/def2-QZVPP |  |  |  |  |
+| wB97X-V/def2-QZVPP |  |  |  |  |
+| PBE0-D4/def2-QZVPP |  |  |  |  |
+| PW6B95-D4/def2-QZVPP |  |  |  |  |
 
 ### CHAL336 / def2-TZVPP
 
 | method | MD | MAD | RMSD | SD |
 | --- | ---:| ---:| ---:| ---:|
-| r²SCANh | -2.23 | 2.42 | 3.82 | 3.09 |
-| r²SCAN0 | -2.09 | 2.26 | 3.51 | 2.82 |
-| r²SCAN50 | -2.06 | 2.20 | 3.36 | 2.66 |
+| r²SCANh-D4/def2-TZVPP | -2.23 | 2.42 | 3.82 | 3.09 |
+| r²SCAN0-D4/def2-TZVPP | -2.09 | 2.26 | 3.51 | 2.82 |
+| r²SCAN50-D4/def2-TZVPP | -2.06 | 2.20 | 3.36 | 2.66 |
 
 ----------------------------------------------------------------
 
@@ -314,25 +314,25 @@ Statistics in kcal/mol.
 
 | method | MD | MAD | RMSD | SD |
 | --- | ---:| ---:| ---:| ---:|
-| r²SCAN | -0.58 | 0.62 | 1.03 | 0.85 |
-| r²SCANh | -0.54 | 0.57 | 0.95 | 0.78 |
-| r²SCAN0 | -0.50 | 0.53 | 0.87 | 0.72 |
-| r²SCAN50 | -0.49 | 0.52 | 0.85 | 0.70 |
-| wB97X-V | 0.01 | 0.23 | 0.34 | 0.34 |
-| PBE0-D4 | -0.69 | 0.70 | 0.99 | 0.72 |
-| PW6B95-D4 | -0.08 | 0.24 | 0.33 | 0.32 |
-| r2SCANh | -0.60 | 0.61 | 0.98 | 0.78 |
-| r2SCAN0 | -0.57 | 0.58 | 0.91 | 0.71 |
-| r2SCAN50 | -0.57 | 0.58 | 0.90 | 0.70 |
+| r²SCAN-D4/def2-QZVPP | -0.58 | 0.62 | 1.03 | 0.85 |
+| r²SCANh-D4/def2-QZVPP | -0.54 | 0.57 | 0.95 | 0.78 |
+| r²SCAN0-D4/def2-QZVPP | -0.50 | 0.53 | 0.87 | 0.72 |
+| r²SCAN50-D4/def2-QZVPP | -0.49 | 0.52 | 0.85 | 0.70 |
+| wB97X-V/def2-QZVPP | 0.01 | 0.23 | 0.34 | 0.34 |
+| PBE0-D4/def2-QZVPP | -0.69 | 0.70 | 0.99 | 0.72 |
+| PW6B95-D4/def2-QZVPP | -0.08 | 0.24 | 0.33 | 0.32 |
+| r²SCANh-D4/def2-QZVPP* | -0.60 | 0.61 | 0.98 | 0.78 |
+| r²SCAN0-D4/def2-QZVPP* | -0.57 | 0.58 | 0.91 | 0.71 |
+| r²SCAN50-D4/def2-QZVPP* | -0.57 | 0.58 | 0.90 | 0.70 |
 
 
 ### HB300SPX / def2-TZVPP
 
 | method | MD | MAD | RMSD | SD |
 | --- | ---:| ---:| ---:| ---:|
-| r²SCANh | -0.67 | 0.69 | 1.07 | 0.83 |
-| r²SCAN0 | -0.63 | 0.65 | 0.99 | 0.76 |
-| r²SCAN50 | -0.61 | 0.64 | 0.96 | 0.74 |
+| r²SCANh-D4/def2-TZVPP | -0.67 | 0.69 | 1.07 | 0.83 |
+| r²SCAN0-D4/def2-TZVPP | -0.63 | 0.65 | 0.99 | 0.76 |
+| r²SCAN50-D4/def2-TZVPP | -0.61 | 0.64 | 0.96 | 0.74 |
 
 ----------------------------------------------------------------
 
@@ -340,16 +340,16 @@ Statistics in kcal/mol.
 
 | method | MD | MAD | RMSD | SD |
 | --- | ---:| ---:| ---:| ---:|
-| r²SCAN | -0.02 | 0.24 | 0.35 | 0.35 |
-| r²SCANh | -0.00 | 0.22 | 0.31 | 0.31 |
-| r²SCAN0 | 0.02 | 0.20 | 0.28 | 0.28 |
-| r²SCAN50 | 0.04 | 0.22 | 0.32 | 0.32 |
-| wB97X-V | 0.11 | 0.18 | 0.26 | 0.24 |
-| PBE0-D4 | -0.19 | 0.27 | 0.39 | 0.34 |
-| PW6B95-D4 | 0.02 | 0.18 | 0.25 | 0.25 |
-| r²SCANh* | 0.03 | 0.22 | 0.30 | 0.30 |
-| r²SCAN0* | 0.04 | 0.20 | 0.28 | 0.27 |
-| r²SCAN50* | 0.02 | 0.20 | 0.31 | 0.30 |
+| r²SCAN-D4/def2-QZVPP | -0.02 | 0.24 | 0.35 | 0.35 |
+| r²SCANh-D4/def2-QZVPP | -0.00 | 0.22 | 0.31 | 0.31 |
+| r²SCAN0-D4/def2-QZVPP | 0.02 | 0.20 | 0.28 | 0.28 |
+| r²SCAN50-D4/def2-QZVPP | 0.04 | 0.22 | 0.32 | 0.32 |
+| wB97X-V/def2-QZVPP | 0.11 | 0.18 | 0.26 | 0.24 |
+| PBE0-D4/def2-QZVPP | -0.19 | 0.27 | 0.39 | 0.34 |
+| PW6B95-D4/def2-QZVPP | 0.02 | 0.18 | 0.25 | 0.25 |
+| r²SCANh-D4/def2-QZVPP* | 0.03 | 0.22 | 0.30 | 0.30 |
+| r²SCAN0-D4/def2-QZVPP* | 0.04 | 0.20 | 0.28 | 0.27 |
+| r²SCAN50-D4/def2-QZVPP* | 0.02 | 0.20 | 0.31 | 0.30 |
 
 
 
@@ -357,9 +357,9 @@ Statistics in kcal/mol.
 
 | method | MD | MAD | RMSD | SD |
 | --- | ---:| ---:| ---:| ---:|
-| r²SCANh | -0.04 | 0.25 | 0.35 | 0.35 |
-| r²SCAN0 | -0.01 | 0.23 | 0.32 | 0.32 |
-| r²SCAN50 | 0.01 | 0.24 | 0.35 | 0.35 |
+| r²SCANh-D4/def2-TZVPP | -0.04 | 0.25 | 0.35 | 0.35 |
+| r²SCAN0-D4/def2-TZVPP | -0.01 | 0.23 | 0.32 | 0.32 |
+| r²SCAN50-D4/def2-TZVPP | 0.01 | 0.24 | 0.35 | 0.35 |
 
 ----------------------------------------------------------------
 
@@ -509,27 +509,27 @@ Bond angles. Statistics in deg.
 
 | method | MD | MAD | RMSD | SD |
 | --- | ---:| ---:| ---:| ---:|
-| r²SCAN | -0.13 | 3.32 | 4.29 | 4.29 |
-| r²SCANh | -0.52 | 2.54 | 3.47 | 3.47 |
-| r²SCAN0 | 0.09 | 2.31 | 2.91 | 2.90 |
-| r²SCAN50 | 0.19 | 3.19 | 4.20 | 4.20 |
-| wB97X-V |  | 2.21	 |  |  |  (MOR41 paper)
-| PBE0-D4 | –0.25 | 2.28 | 3.08 | 3.11 | <-- def2-QZVPP from DFT-D4 paper -->
-| PW6B95-D4 | 2.68 | 3.20 | 3.99 | 2.98 |
-| r²SCANh* | -0.74 | 2.26 | 3.26 | 3.18 |
-| r²SCAN0* | -0.64 | 2.10 | 2.81 | 2.74 |
-| r²SCAN50* | -0.42 | 3.22 | 4.23 | 4.21 |
+| r²SCAN-D4/def2-QZVPP | -0.13 | 3.32 | 4.29 | 4.29 |
+| r²SCANh-D4/def2-QZVPP | -0.52 | 2.54 | 3.47 | 3.47 |
+| r²SCAN0-D4/def2-QZVPP | 0.09 | 2.31 | 2.91 | 2.90 |
+| r²SCAN50-D4/def2-QZVPP | 0.19 | 3.19 | 4.20 | 4.20 |
+| wB97X-V/def2-QZVPP |  | 2.21	 |  |  |  (MOR41 paper)
+| PBE0-D4/def2-QZVPP | –0.25 | 2.28 | 3.08 | 3.11 | <-- def2-QZVPP from DFT-D4 paper -->
+| PW6B95-D4/def2-QZVPP | 2.68 | 3.20 | 3.99 | 2.98 |
+| r²SCANh-D4/def2-QZVPP* | -0.74 | 2.26 | 3.26 | 3.18 |
+| r²SCAN0-D4/def2-QZVPP* | -0.64 | 2.10 | 2.81 | 2.74 |
+| r²SCAN50-D4/def2-QZVPP* | -0.42 | 3.22 | 4.23 | 4.21 |
 
 
-<!-- MOR41 energies mit neu gerechnetem D4, erstaunlicherweise wesentlich schlechter als D3 (2.70 laut webtable -->
+
 
 ### MOR41 / def2-TZVPP
 
 | method | MD | MAD | RMSD | SD |
 | --- | ---:| ---:| ---:| ---:|
-| r²SCANh | -0.04 | 2.59 | 3.55 | 3.55 |
-| r²SCAN0 | 0.08 | 2.26 | 2.90 | 2.90 |
-| r²SCAN50 | 0.12 | 3.10 | 4.11 | 4.11 |
+| r²SCANh-D4/def2-TZVPP | -0.04 | 2.59 | 3.55 | 3.55 |
+| r²SCAN0-D4/def2-TZVPP | 0.08 | 2.26 | 2.90 | 2.90 |
+| r²SCAN50-D4/def2-TZVPP | 0.12 | 3.10 | 4.11 | 4.11 |
 
 ----------------------------------------------------------------
 
@@ -537,16 +537,16 @@ Bond angles. Statistics in deg.
 
 | method | MD | MAD | RMSD | SD |
 | --- | ---:| ---:| ---:| ---:|
-| r²SCAN | 0.89 | 3.33 | 4.48 | 4.38 |
-| r²SCANh | 0.31 | 2.64 | 3.61 | 3.59 |
-| r²SCAN0 | -0.53 | 2.96 | 3.98 | 3.95 |
-| r²SCAN50 | -1.94 | 4.84 | 7.12 | 6.87 |
-| wB97X-V |  | 2.8 |  |  |
-| PBE0-D4 |  | 2.6 |  |  |
-| PW6B95-D4 |  | 2.5 |  |  |
-| r²SCANh* | 0.05 | 2.57 | 3.49 | 3.49 |
-| r²SCAN0* | -0.84 | 2.94 | 3.93 | 3.84 |
-| r²SCAN50* | -2.21 | 4.88 | 7.11 | 6.76 |
+| r²SCAN-D4/def2-QZVPP | 0.89 | 3.33 | 4.48 | 4.38 |
+| r²SCANh-D4/def2-QZVPP | 0.31 | 2.64 | 3.61 | 3.59 |
+| r²SCAN0-D4/def2-QZVPP | -0.53 | 2.96 | 3.98 | 3.95 |
+| r²SCAN50-D4/def2-QZVPP | -1.94 | 4.84 | 7.12 | 6.87 |
+| wB97X-V/def2-QZVPP |  | 2.8 |  |  |
+| PBE0-D4/def2-QZVPP |  | 2.6 |  |  |
+| PW6B95-D4/def2-QZVPP |  | 2.5 |  |  |
+| r²SCANh-D4/def2-QZVPP* | 0.05 | 2.57 | 3.49 | 3.49 |
+| r²SCAN0-D4/def2-QZVPP* | -0.84 | 2.94 | 3.93 | 3.84 |
+| r²SCAN50-D4/def2-QZVPP* | -2.21 | 4.88 | 7.11 | 6.76 |
 
 
 
@@ -554,9 +554,9 @@ Bond angles. Statistics in deg.
 
 | method | MD | MAD | RMSD | SD |
 | --- | ---:| ---:| ---:| ---:|
-| r²SCANh | 0.23 | 3.17 | 4.29 | 4.28 |
-| r²SCAN0 | -0.62 | 3.42 | 4.72 | 4.68 |
-| r²SCAN50 |  |  |  |  |                          MISSING
+| r²SCANh-D4/def2-TZVPP | 0.23 | 3.17 | 4.29 | 4.28 |
+| r²SCAN0-D4/def2-TZVPP | -0.62 | 3.42 | 4.72 | 4.68 |
+| r²SCAN50-D4/def2-TZVPP |  |  |  |  |                          MISSING
 
 ----------------------------------------------------------------
 
@@ -564,25 +564,25 @@ Bond angles. Statistics in deg.
 
 | method | MD | MAD | RMSD | SD |
 | --- | ---:| ---:| ---:| ---:|
-| r²SCAN | 1.22 | 2.74 | 3.78 | 3.57 |
-| r²SCANh | 0.91 | 1.96 | 2.69 | 2.53 |
-| r²SCAN0 | 0.44 | 0.88 | 1.22 | 1.14 |
-| r²SCAN50 | -0.21 | 1.30 | 1.58 | 1.57 |
-| wB97X-V | 0.49 | 1.18 | 1.49 | 1.41 |
-| PBE0-D4 | -0.11 | 0.83 | 0.96 | 0.95 |
-| PW6B95-D4 | -1.82 | 1.82 | 2.13 | 1.11 |
-| r²SCANh* | 1.77 | 2.24 | 2.85 | 2.23 |
-| r²SCAN0* | 1.50 | 1.53 | 1.82 | 1.04 |
-| r²SCAN50* | 0.66 | 1.53 | 2.11 | 2.00 |
+| r²SCAN-D4/def2-QZVPP | 1.22 | 2.74 | 3.78 | 3.57 |
+| r²SCANh-D4/def2-QZVPP | 0.91 | 1.96 | 2.69 | 2.53 |
+| r²SCAN0-D4/def2-QZVPP | 0.44 | 0.88 | 1.22 | 1.14 |
+| r²SCAN50-D4/def2-QZVPP | -0.21 | 1.30 | 1.58 | 1.57 |
+| wB97X-V/def2-QZVPP | 0.49 | 1.18 | 1.49 | 1.41 |
+| PBE0-D4/def2-QZVPP | -0.11 | 0.83 | 0.96 | 0.95 |
+| PW6B95-D4/def2-QZVPP | -1.82 | 1.82 | 2.13 | 1.11 |
+| r²SCANh-D4/def2-QZVPP* | 1.77 | 2.24 | 2.85 | 2.23 |
+| r²SCAN0-D4/def2-QZVPP* | 1.50 | 1.53 | 1.82 | 1.04 |
+| r²SCAN50-D4/def2-QZVPP* | 0.66 | 1.53 | 2.11 | 2.00 |
 
 
 ### WCCR10 / def2-TZVPP
 
 | method | MD | MAD | RMSD | SD |
 | --- | ---:| ---:| ---:| ---:|
-| r²SCANh | 1.05 | 1.20 | 2.82 | 2.61 |
-| r²SCAN0 | 0.60 | 1.05 | 1.36 | 1.22 |
-| r²SCAN50 | -0.04 | 1.26 | 1.57 | 1.57 |
+| r²SCANh-D4/def2-TZVPP | 1.05 | 1.20 | 2.82 | 2.61 |
+| r²SCAN0-D4/def2-TZVPP | 0.60 | 1.05 | 1.36 | 1.22 |
+| r²SCAN50-D4/def2-TZVPP | -0.04 | 1.26 | 1.57 | 1.57 |
 
 ----------------------------------------------------------------
 
@@ -590,16 +590,16 @@ Bond angles. Statistics in deg.
 
 | method | MD | MAD | RMSD | SD |
 | --- | ---:| ---:| ---:| ---:|
-| r²SCAN | -2.97 | 3.71 | 4.86 | 3.85 |
-| r²SCANh | -1.97 | 2.79 | 3.76 | 3.21 |
-| r²SCAN0 | -0.56 | 2.07 | 2.81 | 2.75 |
-| r²SCAN50 | 1.57 | 2.86 | 4.03 | 3.71 |
-| wB97X-V | 1.09 | 2.00 | 2.60 | 2.36 |
-| PBE0-D4 | -1.24 | 2.38 | 3.20 | 2.95 |
-| PW6B95-D4 | -1.06 | 2.07 | 2.84 | 2.63 |
-| r²SCANh* | -2.06 | 2.89 | 3.98 | 3.41 |
-| r²SCAN0* | -0.67 | 2.18 | 3.01 | 2.93 |
-| r²SCAN50* | 1.46 | 2.78 | 4.00 | 3.72 |
+| r²SCAN-D4/def2-QZVPP | -2.97 | 3.71 | 4.86 | 3.85 |
+| r²SCANh-D4/def2-QZVPP | -1.97 | 2.79 | 3.76 | 3.21 |
+| r²SCAN0-D4/def2-QZVPP | -0.56 | 2.07 | 2.81 | 2.75 |
+| r²SCAN50-D4/def2-QZVPP | 1.57 | 2.86 | 4.03 | 3.71 |
+| wB97X-V/def2-QZVPP | 1.09 | 2.00 | 2.60 | 2.36 |
+| PBE0-D4/def2-QZVPP | -1.24 | 2.38 | 3.20 | 2.95 |
+| PW6B95-D4/def2-QZVPP | -1.06 | 2.07 | 2.84 | 2.63 |
+| r²SCANh-D4/def2-QZVPP* | -2.06 | 2.89 | 3.98 | 3.41 |
+| r²SCAN0-D4/def2-QZVPP* | -0.67 | 2.18 | 3.01 | 2.93 |
+| r²SCAN50-D4/def2-QZVPP* | 1.46 | 2.78 | 4.00 | 3.72 |
 
 
 
@@ -607,9 +607,9 @@ Bond angles. Statistics in deg.
 
 | method | MD | MAD | RMSD | SD |
 | --- | ---:| ---:| ---:| ---:|
-| r²SCANh | -1.97 | 2.78 | 3.76 | 3.21 |
-| r²SCAN0 | -0.56 | 2.06 | 2.80 | 2.74 |
-| r²SCAN50 | 1.57 | 2.87 | 4.01 | 3.69 |
+| r²SCANh-D4/def2-TZVPP | -1.97 | 2.78 | 3.76 | 3.21 |
+| r²SCAN0-D4/def2-TZVPP | -0.56 | 2.06 | 2.80 | 2.74 |
+| r²SCAN50-D4/def2-TZVPP | 1.57 | 2.87 | 4.01 | 3.69 |
 
 ----------------------------------------------------------------
 
@@ -617,24 +617,24 @@ Bond angles. Statistics in deg.
 
 | method | MD | MAD | RMSD | SD |
 | --- | ---:| ---:| ---:| ---:|
-| r²SCAN | -2.59 | 3.24 | 4.04 | 3.10 |
-| r²SCANh | -1.60 | 2.33 | 2.92 | 2.46 |
-| r²SCAN0 | -0.10 | 1.88 | 2.43 | 2.43 |
-| r²SCAN50 | 2.13 | 2.89 | 4.64 | 4.12 |
-| wB97X-V | 1.85 | 2.11 | 3.40 | 2.85 |
-| PBE0-D4 | -0.87 | 2.32 | 2.87 | 2.74 |
-| PW6B95-D4 | 0.10 | 1.26 | 1.66 | 1.65 |
-| r²SCANh* | -1.56 | 2.33 | 2.90 | 2.45 |
-| r²SCAN0* | -0.10 | 1.89 | 2.43 | 2.43 |
-| r²SCAN50* | 2.08 | 2.89 | 4.63 | 4.14 |
+| r²SCAN-D4/def2-QZVPP | -2.59 | 3.24 | 4.04 | 3.10 |
+| r²SCANh-D4/def2-QZVPP | -1.60 | 2.33 | 2.92 | 2.46 |
+| r²SCAN0-D4/def2-QZVPP | -0.10 | 1.88 | 2.43 | 2.43 |
+| r²SCAN50-D4/def2-QZVPP | 2.13 | 2.89 | 4.64 | 4.12 |
+| wB97X-V/def2-QZVPP | 1.85 | 2.11 | 3.40 | 2.85 |
+| PBE0-D4/def2-QZVPP | -0.87 | 2.32 | 2.87 | 2.74 |
+| PW6B95-D4/def2-QZVPP | 0.10 | 1.26 | 1.66 | 1.65 |
+| r²SCANh-D4/def2-QZVPP* | -1.56 | 2.33 | 2.90 | 2.45 |
+| r²SCAN0-D4/def2-QZVPP* | -0.10 | 1.89 | 2.43 | 2.43 |
+| r²SCAN50-D4/def2-QZVPP* | 2.08 | 2.89 | 4.63 | 4.14 |
 
 ### TMBH / def2-TZVPP
 
 | method | MD | MAD | RMSD | SD |
 | --- | ---:| ---:| ---:| ---:|
-| r²SCANh | -1.63 | 2.39 | 3.00 | 2.52 |
-| r²SCAN0 | -0.16 | 1.92 | 2.49 | 2.48 |
-| r²SCAN50 | 2.07 | 2.93 | 4.65 | 4.16 |
+| r²SCANh-D4/def2-TZVPP | -1.63 | 2.39 | 3.00 | 2.52 |
+| r²SCAN0-D4/def2-TZVPP | -0.16 | 1.92 | 2.49 | 2.48 |
+| r²SCAN50-D4/def2-TZVPP | 2.07 | 2.93 | 4.65 | 4.16 |
 
 ----------------------------------------------------------------
 
@@ -642,25 +642,25 @@ Bond angles. Statistics in deg.
 
 | method | MD | MAD | RMSD | SD |
 | --- | ---:| ---:| ---:| ---:|
-| r²SCAN | 1.37 | 4.81 | 5.42 | 5.24 |
-| r²SCANh | 1.95 | 4.48 | 5.19 | 4.81 |
-| r²SCAN0 | 2.73 | 4.09 | 5.08 | 4.28 |
-| r²SCAN50 | 3.88 | 4.21 | 5.32 | 3.64 |
-| wB97X-V | -1.49 | 1.69 | 2.23 | 1.65 |
-| PBE0-D4 | 0.92 | 3.24 | 3.69 | 3.57 |
-| PW6B95-D4 | 0.08 | 2.62 | 2.87 | 2.87 |
-| r²SCANh* | 1.77 | 4.50 | 5.15 | 4.84 |
-| r²SCAN0* | 2.46 | 4.12 | 4.96 | 4.31 |
-| r²SCAN50* | 3.61 | 4.03 | 5.16 | 3.69 |
+| r²SCAN-D4/def2-QZVPP | 1.37 | 4.81 | 5.42 | 5.24 |
+| r²SCANh-D4/def2-QZVPP | 1.95 | 4.48 | 5.19 | 4.81 |
+| r²SCAN0-D4/def2-QZVPP | 2.73 | 4.09 | 5.08 | 4.28 |
+| r²SCAN50-D4/def2-QZVPP | 3.88 | 4.21 | 5.32 | 3.64 |
+| wB97X-V/def2-QZVPP | -1.49 | 1.69 | 2.23 | 1.65 |
+| PBE0-D4/def2-QZVPP | 0.92 | 3.24 | 3.69 | 3.57 |
+| PW6B95-D4/def2-QZVPP | 0.08 | 2.62 | 2.87 | 2.87 |
+| r²SCANh-D4/def2-QZVPP* | 1.77 | 4.50 | 5.15 | 4.84 |
+| r²SCAN0-D4/def2-QZVPP* | 2.46 | 4.12 | 4.96 | 4.31 |
+| r²SCAN50-D4/def2-QZVPP* | 3.61 | 4.03 | 5.16 | 3.69 |
 
 
 ### MLA24 / def2-TZVPP
 
 | method | MD | MAD | RMSD | SD |
 | --- | ---:| ---:| ---:| ---:|
-| r²SCANh | 2.15 | 4.82 | 5.27 | 4.81 |
-| r²SCAN0 | 2.91 | 4.09 | 5.17 | 4.27 |
-| r²SCAN50 | 4.03 | 4.29 | 5.42 | 3.62 |
+| r²SCANh-D4/def2-TZVPP | 2.15 | 4.82 | 5.27 | 4.81 |
+| r²SCAN0-D4/def2-TZVPP | 2.91 | 4.09 | 5.17 | 4.27 |
+| r²SCAN50-D4/def2-TZVPP | 4.03 | 4.29 | 5.42 | 3.62 |
 
 ----------------------------------------------------------------
 
@@ -669,25 +669,25 @@ Bond angles. Statistics in deg.
 
 | method | MD | MAD | RMSD | SD |
 | --- | ---:| ---:| ---:| ---:|
-| r²SCAN | -0.06 | 0.72 | 0.85 | 0.85 | (MAD 0.71 im paper)
-| r²SCANh | -0.07 | 0.67 | 0.80 | 0.80 |
-| r²SCAN0 | -0.13 | 0.71 | 0.82 | 0.81 |
-| r²SCAN50 | -0.27 | 0.84 | 1.12 | 1.09 |
-| wB97X-V |  | 0.73 |  |  |
-| PBE0-D4 |  | 0.88 |  |  |
-| PW6B95-D4 |  | 0.83 |  |  | (IONPI paper SI Tab S15 Korrekt? Spichi fragen!)
-| r²SCANh* | -0.18 | 0.77 | 0.93 | 0.91 |
-| r²SCAN0* | -0.33 | 0.85 | 1.04 | 0.99 |
-| r²SCAN50* | -0.54 | 0.95 | 1.26 | 1.14 |
+| r²SCAN-D4/def2-QZVPP | -0.06 | 0.72 | 0.85 | 0.85 | (MAD 0.71 im paper)
+| r²SCANh-D4/def2-QZVPP | -0.07 | 0.67 | 0.80 | 0.80 |
+| r²SCAN0-D4/def2-QZVPP | -0.13 | 0.71 | 0.82 | 0.81 |
+| r²SCAN50-D4/def2-QZVPP | -0.27 | 0.84 | 1.12 | 1.09 |
+| wB97X-V/def2-QZVPP |  | 0.73 |  |  |
+| PBE0-D4/def2-QZVPP |  | 0.88 |  |  |
+| PW6B95-D4/def2-QZVPP |  | 0.83 |  |  | (IONPI paper SI Tab S15 Korrekt? Spichi fragen!)
+| r²SCANh-D4/def2-QZVPP* | -0.18 | 0.77 | 0.93 | 0.91 |
+| r²SCAN0-D4/def2-QZVPP* | -0.33 | 0.85 | 1.04 | 0.99 |
+| r²SCAN50-D4/def2-QZVPP* | -0.54 | 0.95 | 1.26 | 1.14 |
 
 
 ### IONPI19 / def2-TZVPP
 
 | method | MD | MAD | RMSD | SD |
 | --- | ---:| ---:| ---:| ---:|
-| r²SCANh | -0.92 | 1.14 | 1.38 | 1.03 |
-| r²SCAN0 | -0.95 | 1.04 | 1.28 | 0.86 |
-| r²SCAN50 | -1.02 | 1.04 | 1.35 | 0.88 |
+| r²SCANh-D4/def2-TZVPP | -0.92 | 1.14 | 1.38 | 1.03 |
+| r²SCAN0-D4/def2-TZVPP | -0.95 | 1.04 | 1.28 | 0.86 |
+| r²SCAN50-D4/def2-TZVPP | -1.02 | 1.04 | 1.35 | 0.88 |
 
 ----------------------------------------------------------------
 
@@ -695,25 +695,25 @@ Bond angles. Statistics in deg.
 
 | method | MD | MAD | RMSD | SD |
 | --- | ---:| ---:| ---:| ---:|
-| r²SCAN | 0.19 | 0.19 | 0.20 | 0.07 |
-| r²SCANh | 0.18 | 0.18 | 0.20 | 0.07 |
-| r²SCAN0 | 0.16 | 0.16 | 0.17 | 0.07 |
-| r²SCAN50 | 0.11 | 0.12 | 0.14 | 0.08 |
-| wB97X-V | -0.26 | 0.26 | 0.28 | 0.12 |
-| PBE0-D4 | -0.19 | 0.19 | 0.19 | 0.05 |
-| PW6B95-D4 | -0.67 | 0.67 | 0.70 | 0.17 |
-| r²SCANh* | 0.25 | 0.25 | 0.27 | 0.09 |
-| r²SCAN0* | 0.19 | 0.19 | 0.20 | 0.09 |
-| r²SCAN50* | 0.05 | 0.09 | 0.10 | 0.09 |
+| r²SCAN-D4/def2-QZVPP | 0.19 | 0.19 | 0.20 | 0.07 |
+| r²SCANh-D4/def2-QZVPP | 0.18 | 0.18 | 0.20 | 0.07 |
+| r²SCAN0-D4/def2-QZVPP | 0.16 | 0.16 | 0.17 | 0.07 |
+| r²SCAN50-D4/def2-QZVPP | 0.11 | 0.12 | 0.14 | 0.08 |
+| wB97X-V/def2-QZVPP | -0.26 | 0.26 | 0.28 | 0.12 |
+| PBE0-D4/def2-QZVPP | -0.19 | 0.19 | 0.19 | 0.05 |
+| PW6B95-D4/def2-QZVPP | -0.67 | 0.67 | 0.70 | 0.17 |
+| r²SCANh-D4/def2-QZVPP* | 0.25 | 0.25 | 0.27 | 0.09 |
+| r²SCAN0-D4/def2-QZVPP* | 0.19 | 0.19 | 0.20 | 0.09 |
+| r²SCAN50-D4/def2-QZVPP* | 0.05 | 0.09 | 0.10 | 0.09 |
 
 
 ### ACONF12 / def2-TZVPP
 
 | method | MD | MAD | RMSD | SD |
 | --- | ---:| ---:| ---:| ---:|
-| r²SCANh | 0.24 | 0.24 | 0.25 | 0.07 |
-| r²SCAN0 | 0.20 | 0.20 | 0.21 | 0.07 |
-| r²SCAN50 | 0.13 | 0.15 | 0.16 | 0.09 |
+| r²SCANh-D4/def2-TZVPP | 0.24 | 0.24 | 0.25 | 0.07 |
+| r²SCAN0-D4/def2-TZVPP | 0.20 | 0.20 | 0.21 | 0.07 |
+| r²SCAN50-D4/def2-TZVPP | 0.13 | 0.15 | 0.16 | 0.09 |
 
 ----------------------------------------------------------------
 
@@ -721,25 +721,25 @@ Bond angles. Statistics in deg.
 
 | method | MD | MAD | RMSD | SD |
 | --- | ---:| ---:| ---:| ---:|
-| r²SCAN | 0.40 | 0.75 | 1.06 | 0.99 |
-| r²SCANh | 0.49 | 0.77 | 1.09 | 0.97 |
-| r²SCAN0 | 0.61 | 0.83 | 1.19 | 1.02 |
-| r²SCAN50 | 0.59 | 1.34 | 2.40 | 2.33 |
-| wB97X-V | 0.43 | 0.62 | 1.00 | 0.91 |
-| PBE0-D4 | 0.53 | 0.85 | 1.16 | 1.03 |
-| PW6B95-D4 | -0.01 | 0.90 | 1.31 | 1.31 |
-| r²SCANh* | 0.52 | 0.80 | 1.12 | 0.99 |
-| r²SCAN0* | 0.68 | 0.89 | 1.26 | 1.06 |
-| r²SCAN50* | 0.67 | 1.37 | 2.44 | 2.35 |
+| r²SCAN-D4/def2-QZVPP | 0.40 | 0.75 | 1.06 | 0.99 |
+| r²SCANh-D4/def2-QZVPP | 0.49 | 0.77 | 1.09 | 0.97 |
+| r²SCAN0-D4/def2-QZVPP | 0.61 | 0.83 | 1.19 | 1.02 |
+| r²SCAN50-D4/def2-QZVPP | 0.59 | 1.34 | 2.40 | 2.33 |
+| wB97X-V/def2-QZVPP | 0.43 | 0.62 | 1.00 | 0.91 |
+| PBE0-D4/def2-QZVPP | 0.53 | 0.85 | 1.16 | 1.03 |
+| PW6B95-D4/def2-QZVPP | -0.01 | 0.90 | 1.31 | 1.31 |
+| r²SCANh-D4/def2-QZVPP* | 0.52 | 0.80 | 1.12 | 0.99 |
+| r²SCAN0-D4/def2-QZVPP* | 0.68 | 0.89 | 1.26 | 1.06 |
+| r²SCAN50-D4/def2-QZVPP* | 0.67 | 1.37 | 2.44 | 2.35 |
 
 
 ### MPCONF196 / def2-TZVPP
 
 | method | MD | MAD | RMSD | SD |
 | --- | ---:| ---:| ---:| ---:|
-| r²SCANh | 0.53 | 0.81 | 1.15 | 1.02 |
-| r²SCAN0 | 0.66 | 0.88 | 1.25 | 1.07 |
-| r²SCAN50 | 0.87 | 1.06 | 1.52 | 1.25 |
+| r²SCANh-D4/def2-TZVPP | 0.53 | 0.81 | 1.15 | 1.02 |
+| r²SCAN0-D4/def2-TZVPP | 0.66 | 0.88 | 1.25 | 1.07 |
+| r²SCAN50-D4/def2-TZVPP | 0.87 | 1.06 | 1.52 | 1.25 |
 
 ----------------------------------------------------------------
 
@@ -747,25 +747,25 @@ Bond angles. Statistics in deg.
 
 | method | MD | MAD | RMSD | SD |
 | --- | ---:| ---:| ---:| ---:|
-| r²SCAN | 0.09 | 0.50 | 0.69 | 0.69 |
-| r²SCANh | 0.11 | 0.46 | 0.64 | 0.63 |
-| r²SCAN0 | 0.13 | 0.46 | 0.62 | 0.61 |
-| r²SCAN50 | 0.18 | 0.54 | 0.72 | 0.70 |
-| wB97X-V | -0.13 | 0.31 | 0.41 | 0.39 |
-| PBE0-D4 | 0.03 | 0.52 | 0.67 | 0.67 |
-| PW6B95-D4 | -0.28 | 0.64 | 0.82 | 0.77 |
-| r²SCANh* | 0.12 | 0.46 | 0.64 | 0.63 |
-| r²SCAN0* | 0.14 | 0.46 | 0.61 | 0.59 |
-| r²SCAN50* | 0.18 | 0.53 | 0.70 | 0.68 |
+| r²SCAN-D4/def2-QZVPP | 0.09 | 0.50 | 0.69 | 0.69 |
+| r²SCANh-D4/def2-QZVPP | 0.11 | 0.46 | 0.64 | 0.63 |
+| r²SCAN0-D4/def2-QZVPP | 0.13 | 0.46 | 0.62 | 0.61 |
+| r²SCAN50-D4/def2-QZVPP | 0.18 | 0.54 | 0.72 | 0.70 |
+| wB97X-V/def2-QZVPP | -0.13 | 0.31 | 0.41 | 0.39 |
+| PBE0-D4/def2-QZVPP | 0.03 | 0.52 | 0.67 | 0.67 |
+| PW6B95-D4/def2-QZVPP | -0.28 | 0.64 | 0.82 | 0.77 |
+| r²SCANh-D4/def2-QZVPP* | 0.12 | 0.46 | 0.64 | 0.63 |
+| r²SCAN0-D4/def2-QZVPP* | 0.14 | 0.46 | 0.61 | 0.59 |
+| r²SCAN50-D4/def2-QZVPP* | 0.18 | 0.53 | 0.70 | 0.68 |
 
 
 ### 37CONF8 / def2-TZVPP
 
 | method | MD | MAD | RMSD | SD |
 | --- | ---:| ---:| ---:| ---:|
-| r²SCANh | 0.16 | 0.47 | 0.64 | 0.62 |
-| r²SCAN0 | 0.18 | 0.46 | 0.61 | 0.58 |
-| r²SCAN50 | 0.22 | 0.54 | 0.71 | 0.67 |
+| r²SCANh-D4/def2-TZVPP | 0.16 | 0.47 | 0.64 | 0.62 |
+| r²SCAN0-D4/def2-TZVPP | 0.18 | 0.46 | 0.61 | 0.58 |
+| r²SCAN50-D4/def2-TZVPP | 0.22 | 0.54 | 0.71 | 0.67 |
 
 ----------------------------------------------------------------
 
@@ -773,25 +773,25 @@ Bond angles. Statistics in deg.
 
 | method | MD | MAD | RMSD | SD |
 | --- | ---:| ---:| ---:| ---:|
-| r²SCAN | -0.10 | 0.22 | 0.30 | 0.28 |
-| r²SCANh | -0.13 | 0.22 | 0.29 | 0.26 |
-| r²SCAN0 | -0.17 | 0.23 | 0.31 | 0.26 |
-| r²SCAN50 | -0.25 | 0.28 | 0.39 | 0.31 |
-| wB97X-V | -0.47 | 0.50 | 0.68 | 0.48 |
-| PBE0-D4 | -0.39 | 0.39 | 0.49 | 0.29 |
-| PW6B95-D4 | -0.40 | 0.43 | 0.54 | 0.36 |
-| r2SCANh | -0.15 | 0.22 | 0.30 | 0.26 |
-| r2SCAN0 | -0.20 | 0.25 | 0.33 | 0.27 |
-| r2SCAN50 | -0.27 | 0.31 | 0.42 | 0.32 |
+| r²SCAN-D4/def2-QZVPP | -0.10 | 0.22 | 0.30 | 0.28 |
+| r²SCANh-D4/def2-QZVPP | -0.13 | 0.22 | 0.29 | 0.26 |
+| r²SCAN0-D4/def2-QZVPP | -0.17 | 0.23 | 0.31 | 0.26 |
+| r²SCAN50-D4/def2-QZVPP | -0.25 | 0.28 | 0.39 | 0.31 |
+| wB97X-V/def2-QZVPP | -0.47 | 0.50 | 0.68 | 0.48 |
+| PBE0-D4/def2-QZVPP | -0.39 | 0.39 | 0.49 | 0.29 |
+| PW6B95-D4/def2-QZVPP | -0.40 | 0.43 | 0.54 | 0.36 |
+| r2SCANh-D4/def2-QZVPP* | -0.15 | 0.22 | 0.30 | 0.26 |
+| r2SCAN0-D4/def2-QZVPP* | -0.20 | 0.25 | 0.33 | 0.27 |
+| r2SCAN50-D4/def2-QZVPP* | -0.27 | 0.31 | 0.42 | 0.32 |
 
 
 ### TMCONF16 / def2-TZVPP
 
 | method | MD | MAD | RMSD | SD |
 | --- | ---:| ---:| ---:| ---:|
-| r²SCANh | -0.09 | 0.19 | 0.27 | 0.25 |
-| r²SCAN0 | -0.14 | 0.21 | 0.28 | 0.24 |
-| r²SCAN50 | -0.22 | 0.26 | 0.37 | 0.30 |
+| r²SCANh-D4/def2-TZVPP | -0.09 | 0.19 | 0.27 | 0.25 |
+| r²SCAN0-D4/def2-TZVPP | -0.14 | 0.21 | 0.28 | 0.24 |
+| r²SCAN50-D4/def2-TZVPP | -0.22 | 0.26 | 0.37 | 0.30 |
 
 ----------------------------------------------------------------
 
@@ -799,40 +799,40 @@ Bond angles. Statistics in deg.
 
 | method | MD | MAD | RMSD | SD |
 | --- | ---:| ---:| ---:| ---:|
-| r²SCAN | 9.24 | 9.79 | 13.44 | 9.75 |
-| r²SCANh | 7.76 | 8.26 | 11.23 | 8.15 |
-| r²SCAN0 | 7.08 | 7.48 | 10.14 | 7.23 |
-| r²SCAN50 | 5.15 | 5.58 | 8.73 | 7.06 |
-| wB97X-V | 1.70 | 6.20 | 8.64 | 8.48 |
-| PBE0-D4 | 6.70 | 7.75 | 9.79 | 9.79 |
-| PW6B95-D4 | 6.13 | 7.26 | 9.91 | 7.79 |
-| r²SCANh* | 7.76 | 8.24 | 11.26 | 8.15 |
-| r²SCAN0* | 7.08 | 7.47 | 10.15 | 7.28 |
-| r²SCAN50* | 5.17 | 5.60 | 8.77 | 7.08 |
+| r²SCAN-D4/def2-QZVPP | 9.24 | 9.79 | 13.44 | 9.75 |
+| r²SCANh-D4/def2-QZVPP | 7.76 | 8.26 | 11.23 | 8.15 |
+| r²SCAN0-D4/def2-QZVPP | 7.08 | 7.48 | 10.14 | 7.23 |
+| r²SCAN50-D4/def2-QZVPP | 5.15 | 5.58 | 8.73 | 7.06 |
+| wB97X-V/def2-QZVPP | 1.70 | 6.20 | 8.64 | 8.48 |
+| PBE0-D4/def2-QZVPP | 6.70 | 7.75 | 9.79 | 9.79 |
+| PW6B95-D4/def2-QZVPP | 6.13 | 7.26 | 9.91 | 7.79 |
+| r²SCANh-D4/def2-QZVPP* | 7.76 | 8.24 | 11.26 | 8.15 |
+| r²SCAN0-D4/def2-QZVPP* | 7.08 | 7.47 | 10.15 | 7.28 |
+| r²SCAN50-D4/def2-QZVPP* | 5.17 | 5.60 | 8.77 | 7.08 |
 
 
 | method | MD | MAD | RMSD | SD |
 | --- | ---:| ---:| ---:| ---:|
-| r²SCANh | 7.54 | 8.24 | 10.93 | 7.91 |
-| r²SCAN0 | 6.86 | 7.46 | 9.87 | 7.10 |
-| r²SCAN50 | 4.96 | 5.68 | 8.66 | 7.11 |
+| r²SCANh-D4/def2-TZVPP | 7.54 | 8.24 | 10.93 | 7.91 |
+| r²SCAN0-D4/def2-TZVPP | 6.86 | 7.46 | 9.87 | 7.10 |
+| r²SCAN50-D4/def2-TZVPP | 4.96 | 5.68 | 8.66 | 7.11 |
 
 ----------------------------------------------------------------
 
 | method | MD | MAD | RMSD | SD |
 | --- | ---:| ---:| ---:| ---:|
-| r²SCAN |  |  |  |  |
-| r²SCANh |  |  |  |  |
-| r²SCAN0 |  |  |  |  |
-| r²SCAN50 |  |  |  |  |
-| wB97X-V |  |  |  |  |
-| PBE0-D4 |  |  |  |  |
-| PW6B95-D4 |  |  |  |  |
+| r²SCAN-D4/def2-QZVPP |  |  |  |  |
+| r²SCANh-D4/def2-QZVPP |  |  |  |  |
+| r²SCAN0-D4/def2-QZVPP |  |  |  |  |
+| r²SCAN50-D4/def2-QZVPP |  |  |  |  |
+| wB97X-V/def2-QZVPP |  |  |  |  |
+| PBE0-D4/def2-QZVPP |  |  |  |  |
+| PW6B95-D4/def2-QZVPP |  |  |  |  |
 
 | method | MD | MAD | RMSD | SD |
 | --- | ---:| ---:| ---:| ---:|
-| r²SCANh |  |  |  |  |
-| r²SCAN0 |  |  |  |  |
-| r²SCAN50 |  |  |  |  |
+| r²SCANh-D4/def2-QZVPP |  |  |  |  |
+| r²SCAN0-D4/def2-QZVPP |  |  |  |  |
+| r²SCAN50-D4/def2-QZVPP |  |  |  |  |
 
 ----------------------------------------------------------------
