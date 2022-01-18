@@ -10,6 +10,8 @@
 - Libraries implementing DFT-D4 can be found at https://github.com/dftd4/dftd4 (Fortran) and https://github.com/dftd4/cpp-d4 (C++)
 
 
+In the following * indicates that D4 Parameters from https://doi.org/10.3390/molecules27010141 were employed.
+
 ## Functional parameters
 
 | method | s6 | s8 | s9 | a1 | a2/Bohr |
@@ -70,7 +72,7 @@ Statistics in kcal/mol
 | r²SCAN50-D4-ATM/def2-QZVP | -0.18 | 0.35 | 0.60 | 0.57 |
 
 
-### GMTKN55
+### GMTKN55 / def2-QZVP
 
 Statistics in kcal/mol.
 
@@ -165,7 +167,7 @@ Values for TPSS-D4, PBE-D4 and PBE0-D4/def2-QZVPP are taken from Caldeweyher et 
 | UPU23 | 0.39 | 0.34 | 0.39 | 0.52 | 0.45 | 0.51 | 0.54 |
 | BUT14DIOL | 0.27 | 0.21 | 0.13 | 0.08 | 0.47 | 0.59 | 0.31 |
 
-### GMTKN55 - TZVPP (HN 12.11.2021)
+### GMTKN55 / def2-TZVPP 
 
 Statistics in kcal/mol.
 
