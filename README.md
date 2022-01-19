@@ -298,22 +298,6 @@ Statistics in kcal/mol
 | r²SCAN0-D4/def2-QZVPP* | -1.72 | 1.78 | 2.64 | 2.00 |
 | r²SCAN50-D4/def2-QZVPP* | -1.73 | 1.80 | 2.82 | 2.22 |
 
-
-
-### CHAL336 / ma-def2-QZVPP
-
-Statistics in kcal/mol
-
-| method | MD | MAD | RMSD | SD |
-| --- | ---:| ---:| ---:| ---:|
-| r²SCAN-D4/def2-QZVPP* | |  |  |  |
-| r²SCANh-D4/def2-QZVPP |  |  |  |  |
-| r²SCAN0-D4/def2-QZVPP | -0.97 | 1.31 | 2.03 | 1.78 |
-| r²SCAN50-D4/def2-QZVPP |  |  |  |  |
-| ωB97X-V/def2-QZVPP |  |  |  |  |
-| PBE0-D4/def2-QZVPP |  |  |  |  |
-| PW6B95-D4/def2-QZVPP |  |  |  |  |
-
 ### CHAL336 / def2-TZVPP
 
 Statistics in kcal/mol
