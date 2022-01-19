@@ -760,6 +760,8 @@ Statistics in kcal/mol
 
 ----------------------------------------------------------------
 
+## Geometry Benchmark Results
+
 ### LMGB35
 
 Statistics in pm.
