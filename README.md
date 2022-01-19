@@ -40,7 +40,7 @@ In the following * indicates that D4 Parameters from https://doi.org/10.3390/mol
 
 ## Benchmark Results
 
-### NCIBLIND
+### NCIBLIND10
 Statistics in kcal/mol
 
 | method | MD | MAD | RMSD | SD |
