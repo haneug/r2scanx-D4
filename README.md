@@ -219,6 +219,8 @@ Statistics in kcal/mol
 
 ### S30L / def2-QZVPP (MBU 03.11.2021)
 
+ωB97X-D3 taken from https://doi.org/10.1021/acs.jctc.5b00296
+
 Statistics in kcal/mol. 
 
 | method | MD | MAD | RMSD | SD |
