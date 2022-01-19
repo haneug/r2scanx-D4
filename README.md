@@ -71,6 +71,7 @@ Statistics in kcal/mol
 | r²SCAN0-D4-ATM/def2-QZVP | -0.13 | 0.27 | 0.46 | 0.44 |
 | r²SCAN50-D4-ATM/def2-QZVP | -0.18 | 0.35 | 0.60 | 0.57 |
 
+----------------------------------------------------------------
 
 ### GMTKN55 / def2-QZVP
 
@@ -187,7 +188,7 @@ Statistics in kcal/mol.
 
 ----------------------------------------------------------------
 
-### L7 / def2-QZVPP (MBU 03.11.2021)
+### L7 / def2-QZVPP 
 
 Statistics in kcal/mol.
 
@@ -217,7 +218,7 @@ Statistics in kcal/mol
 
 ----------------------------------------------------------------
 
-### S30L / def2-QZVPP (MBU 03.11.2021)
+### S30L / def2-QZVPP 
 
 ωB97X-D3 taken from https://doi.org/10.1021/acs.jctc.5b00296
 
@@ -249,7 +250,7 @@ Statistics in kcal/mol
 
 ----------------------------------------------------------------
 
-### X40x10(2018) / def2-QZVPP (MBU 03.11.2021)
+### X40x10(2018) / def2-QZVPP 
 
 Statistics in kcal/mol.
 
@@ -325,7 +326,7 @@ Statistics in kcal/mol
 
 ----------------------------------------------------------------
 
-### HB300SPX / def2-QZVPP (MBU 10.11.2021)
+### HB300SPX / def2-QZVPP 
 
 Statistics in kcal/mol
 
@@ -355,7 +356,7 @@ Statistics in kcal/mol
 
 ----------------------------------------------------------------
 
-### R160x6 / def2-QZVPP (MBU 10.11.2021)
+### R160x6 / def2-QZVPP 
 
 Statistics in kcal/mol
 
@@ -384,14 +385,16 @@ Statistics in kcal/mol
 | r²SCAN0-D4/def2-TZVPP | -0.01 | 0.23 | 0.32 | 0.32 |
 | r²SCAN50-D4/def2-TZVPP | 0.01 | 0.24 | 0.35 | 0.35 |
 
+----------------------------------------------------------------
 
-### MOR41 / def2-QZVPP (MBU 01.11.2021)
+### MOR41 / def2-QZVPP 
+
+Statistics in kcal/mol
 
 ωB97X-V data taken from https://doi.org/10.1021/acs.jctc.7b01183
 
 PBE0-D4 data taken from https://doi.org/10.1063/1.5090222
 
-Statistics in kcal/mol
 
 | method | MD | MAD | RMSD | SD |
 | --- | ---:| ---:| ---:| ---:|
@@ -421,11 +424,12 @@ Statistics in kcal/mol
 
 ----------------------------------------------------------------
 
-### ROST61 / def2-QZVPP (MBU 08.11.2021)
+### ROST61 / def2-QZVPP 
+
+Statistics in kcal/mol
 
 ωB97X-V, PW6B95-D4, and PBE0-D4 data taken from https://doi.org/10.1021/acs.jctc.1c00659
 
-Statistics in kcal/mol
 
 | method | MD | MAD | RMSD | SD |
 | --- | ---:| ---:| ---:| ---:|
@@ -454,7 +458,7 @@ Statistics in kcal/mol
 
 ----------------------------------------------------------------
 
-### WCCR10 / def2-QZVPP (MBU 01.11.2021)
+### WCCR10 / def2-QZVPP 
 
 Statistics in kcal/mol
 
@@ -484,7 +488,7 @@ Statistics in kcal/mol
 
 ----------------------------------------------------------------
 
-### MOBH35 / def2-QZVPP (MBU 01.11.2021)
+### MOBH35 / def2-QZVPP 
 
 Statistics in kcal/mol
 
@@ -515,7 +519,7 @@ Statistics in kcal/mol
 
 ----------------------------------------------------------------
 
-### TMBH / def2-QZVPP (MBU 03.11.2021)
+### TMBH / def2-QZVPP 
 
 Statistics in kcal/mol
 
@@ -544,7 +548,7 @@ Statistics in kcal/mol
 
 ----------------------------------------------------------------
 
-### MLA24 / def2-QZVPP (MBU 03.11.2021) former name: PExMPEx
+### MLA24 / def2-QZVPP 
 
 Statistics in kcal/mol
 
@@ -575,11 +579,11 @@ Statistics in kcal/mol
 ----------------------------------------------------------------
 
 
-### IONPI19 / def2-QZVPP (MBU 03.11.2021)
-
-ωB97X-V, PW6B95-D4, and PBE0-D4 data taken from https://pubs.rsc.org/en/content/articlelanding/2021/CP/D1CP01333E
+### IONPI19 / def2-QZVPP 
 
 Statistics in kcal/mol
+
+ωB97X-V, PW6B95-D4, and PBE0-D4 data taken from https://pubs.rsc.org/en/content/articlelanding/2021/CP/D1CP01333E
 
 | method | MD | MAD | RMSD | SD |
 | --- | ---:| ---:| ---:| ---:|
@@ -607,7 +611,7 @@ Statistics in kcal/mol
 
 ----------------------------------------------------------------
 
-### ACONF12 / def2-QZVPP (MBU 08.11.2021)
+### ACONF12 / def2-QZVPP 
 
 Statistics in kcal/mol
 
@@ -637,7 +641,7 @@ Statistics in kcal/mol
 
 ----------------------------------------------------------------
 
-### MPCONF196 / def2-QZVPP (MBU 08.11.2021)
+### MPCONF196 / def2-QZVPP
 
 Statistics in kcal/mol
 
@@ -667,7 +671,7 @@ Statistics in kcal/mol
 
 ----------------------------------------------------------------
 
-### 37CONF8 / def2-QZVPP (MBU 08.11.2021)
+### 37CONF8 / def2-QZVPP 
 
 Statistics in kcal/mol
 
@@ -697,7 +701,7 @@ Statistics in kcal/mol
 
 ----------------------------------------------------------------
 
-### TMCONF16 / def2-QZVPP (MBU 01.11.2021)
+### TMCONF16 / def2-QZVPP 
 
 Statistics in kcal/mol
 
