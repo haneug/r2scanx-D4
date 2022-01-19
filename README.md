@@ -385,6 +385,10 @@ Statistics in kcal/mol
 
 ### MOR41 / def2-QZVPP (MBU 01.11.2021)
 
+ωB97X-V data taken from https://doi.org/10.1021/acs.jctc.7b01183
+
+PBE0-D4 data taken from https://doi.org/10.1063/1.5090222
+
 Statistics in kcal/mol
 
 | method | MD | MAD | RMSD | SD |
@@ -393,8 +397,8 @@ Statistics in kcal/mol
 | r²SCANh-D4/def2-QZVPP | -0.52 | 2.54 | 3.47 | 3.47 |
 | r²SCAN0-D4/def2-QZVPP | 0.09 | 2.31 | 2.91 | 2.90 |
 | r²SCAN50-D4/def2-QZVPP | 0.19 | 3.19 | 4.20 | 4.20 |
-| ωB97X-V/def2-QZVPP |  | 2.21	 |  |  |  (MOR41 paper)
-| PBE0-D4/def2-QZVPP | –0.25 | 2.28 | 3.08 | 3.11 | <-- def2-QZVPP from DFT-D4 paper -->
+| ωB97X-V/def2-QZVPP |  | 2.21	 |  |  |
+| PBE0-D4/def2-QZVPP | –0.25 | 2.28 | 3.08 | 3.11 | 
 | PW6B95-D4/def2-QZVPP | 2.68 | 3.20 | 3.99 | 2.98 |
 | r²SCANh-D4/def2-QZVPP* | -0.74 | 2.26 | 3.26 | 3.18 |
 | r²SCAN0-D4/def2-QZVPP* | -0.64 | 2.10 | 2.81 | 2.74 |
@@ -416,6 +420,8 @@ Statistics in kcal/mol
 ----------------------------------------------------------------
 
 ### ROST61 / def2-QZVPP (MBU 08.11.2021)
+
+ωB97X-V, PW6B95-D4, and PBE0-D4 data taken from https://doi.org/10.1021/acs.jctc.1c00659
 
 Statistics in kcal/mol
 
@@ -568,6 +574,8 @@ Statistics in kcal/mol
 
 
 ### IONPI19 / def2-QZVPP (MBU 03.11.2021)
+
+ωB97X-V, PW6B95-D4, and PBE0-D4 data taken from https://pubs.rsc.org/en/content/articlelanding/2021/CP/D1CP01333E
 
 Statistics in kcal/mol
 
