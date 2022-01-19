@@ -1,0 +1,18 @@
+! r2SCAN def2-QZVP TightSCF
+! DEFGRID3
+! RIJK def2/JK
+! D4
+
+%method 
+ScalHFX 0.1
+ScalDFX 0.9
+D3S8 0.8324
+D3A1 0.4944
+D3A2 5.9019
+end
+
+
+* xyzfile CHRG MULT struc.xyz
+
+
+
