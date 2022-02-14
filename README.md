@@ -230,7 +230,8 @@ Statistics in kcal/mol.
 | r²SCANh-D4/def2-QZVPP | -1.93 | 2.01 | 2.61 | 1.76 |
 | r²SCAN0-D4/def2-QZVPP | -1.78 | 2.01 | 2.50 | 1.75 |
 | r²SCAN50-D4/def2-QZVPP | -1.58 | 2.04 | 2.46 | 1.88 |
-| wB97X-D3/def2-QZVPP |  | 2.6 |  |  |      ACHTUNG!!! D3 value from original publication as calcs still running
+| wB97X-D3/def2-QZVPP |  | 2.6 |  |  |     
+| wB97X-V/def2-QZVPP | -3.83 | 3.83 | 4.68 | 2.70 | => RIJCOSX  
 | PBE0-D4/def2-QZVPP | -1.81 | 2.59 | 3.34 | 2.81 |  => RIJCOSX
 | PW6B95-D4/def2-QZVPP | 1.53 | 2.45 | 2.87 | 2.47 |
 | r²SCANh-D4/def2-QZVPP* | -3.86 | 3.86 | 4.78 | 2.82 |
