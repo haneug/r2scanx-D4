@@ -80,9 +80,9 @@ Statistics in kcal/mol.
 | method | WTMAD-2 | basic | react. | barriers | inter. NCI | intra. NCI | NCI |
 | --- | ---:| ---:| ---:| ---:| ---:| ---:| ---:|
 | r²SCAN-D4/def2-QZVP | 7.54 | 5.55 | 8.26 | 14.29 | 7.46 | 5.74 | 6.62 |
-| r²SCANh-D4/def2-QZVP | 6.23 | 4.42 | 7.26 | 11.10 | 6.34 | 4.97 | 5.67 |
-| r²SCAN0-D4/def2-QZVP | 5.64 | 4.93 | 6.80 | 7.60 | 5.63 | 4.53 | 5.09 |
-| r²SCAN50-D4/def2-QZVP  | 6.28 | 6.60 | 8.49 | 5.97 | 5.32 | 5.14 | 5.23 |
+| r²SCANh-D4/def2-QZVP | 6.22 | 4.42 | 7.22 | 11.10 | 6.34 | 4.97 | 5.67 |
+| r²SCAN0-D4/def2-QZVP | 5.63 | 4.93 | 6.76 | 7.60 | 5.63 | 4.53 | 5.09 |
+| r²SCAN50-D4/def2-QZVP  | 6.27 | 6.60 | 8.43 | 5.97 | 5.32 | 5.14 | 5.23 |
 
 
 | method | WTMAD-1 | basic | react. | barriers | inter. NCI | intra. NCI | NCI |
@@ -96,9 +96,9 @@ Statistics in kcal/mol.
 
 | method | WTMAD-2 | basic | react. | barriers | inter. NCI | intra. NCI | NCI |
 | --- | ---:| ---:| ---:| ---:| ---:| ---:| ---:|
-| r²SCANh-D4/def2-QZVP* | 6.04 | 4.4 | 7.44 | 10.99 | 5.46 | 4.86 | 5.17 |
-| r²SCAN0-D4/def2-QZVP* | 5.45 | 4.91 | 6.86 | 7.53 | 4.75 | 4.51 | 4.63 |
-| r²SCAN50-D4/def2-QZVP* | 6.17 | 6.6 | 8.42 | 5.97 | 4.76 | 5.22 | 4.99 |
+| r²SCANh-D4/def2-QZVP* | 6.04 | 4.4 | 7.40 | 10.99 | 5.46 | 4.86 | 5.17 |
+| r²SCAN0-D4/def2-QZVP* | 5.44 | 4.91 | 6.82 | 7.53 | 4.75 | 4.51 | 4.63 |
+| r²SCAN50-D4/def2-QZVP* | 6.16 | 6.6 | 8.36 | 5.97 | 4.76 | 5.22 | 4.99 |
 
 
 | method | WTMAD-1 | basic | react. | barriers | inter. NCI | intra. NCI | NCI |
@@ -174,9 +174,9 @@ Statistics in kcal/mol.
 
 | method | WTMAD-2 | basic | react. | barriers | inter. NCI | intra. NCI | NCI |
 | --- | ---:| ---:| ---:| ---:| ---:| ---:| ---:|
-| r²SCANh-D4/def2-TZVPP | 6.81 | 4.54 | 7.43 | 11.72 | 7.64 | 5.81 | 6.75 |
-| r²SCAN0-D4/def2-TZVPP | 6.13 | 5.04 | 6.94 | 8.17 | 6.76 | 5.20 | 6.00 |
-| r²SCAN50-D4/def2-TZVPP | 6.52 | 6.56 | 8.65 | 5.98 | 6.02 | 5.58 | 5.81 |
+| r²SCANh-D4/def2-TZVPP | 6.80 | 4.54 | 7.40 | 11.72 | 7.64 | 5.81 | 6.75 |
+| r²SCAN0-D4/def2-TZVPP | 6.12 | 5.04 | 6.90 | 8.17 | 6.76 | 5.20 | 6.00 |
+| r²SCAN50-D4/def2-TZVPP | 6.51 | 6.56 | 8.59 | 5.98 | 6.02 | 5.58 | 5.81 |
 
 
 
