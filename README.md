@@ -23,7 +23,7 @@ In the following * indicates that D4 Parameters from https://doi.org/10.3390/mol
 | r²SCAN50-D4(EEQ)-ATM/def2-QZVP | 1 | 1.0471 | 1 | 0.4574 | 5.8969 |
 | r²SCAN50-D3(BJ)-ATM/def2-QZVP | 1 | 1.3294 | 1 | 0.4311 | 5.9240 |
 
-| method | s6 | s8 | s9 | a1 | a2/Bohr |n
+| method | s6 | s8 | s9 | a1 | a2/Bohr |
 | --- | --- | --- | --- | --- | --- |
 | r²SCANh-D4(EEQ)-ATM/def2-TZVPP | 1 | 0.9119 | 1 | 0.4832 | 6.2073 |
 | r²SCANh-D3(BJ)-ATM/def2-TZVPP | 1 | 1.1493 | 1 | 0.4761 | 6.0947 |
