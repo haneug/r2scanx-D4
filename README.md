@@ -23,7 +23,7 @@ In the following * indicates that D4 Parameters from https://doi.org/10.3390/mol
 | r²SCAN50-D4(EEQ)-ATM/def2-QZVP | 1 | 1.0471 | 1 | 0.4574 | 5.8969 |
 | r²SCAN50-D3(BJ)-ATM/def2-QZVP | 1 | 1.3294 | 1 | 0.4311 | 5.9240 |
 
-| method | s6 | s8 | s9 | a1 | a2/Bohr |
+| method | s6 | s8 | s9 | a1 | a2/Bohr |n
 | --- | --- | --- | --- | --- | --- |
 | r²SCANh-D4(EEQ)-ATM/def2-TZVPP | 1 | 0.9119 | 1 | 0.4832 | 6.2073 |
 | r²SCANh-D3(BJ)-ATM/def2-TZVPP | 1 | 1.1493 | 1 | 0.4761 | 6.0947 |
@@ -868,7 +868,7 @@ Bond lengths. Statistics in pm.
 | r²SCAN50-D4-ATM/def2-TZVPP | –1.34 | 1.34 | 1.68 | 1.02 |
 | PBE0-D4/def2-QZVP | –0.23 | 0.53 | 0.75 | 0.72 |
 | PW6B95-D4/def2-QZVP | –0.60 | 0.60 | 0.81 | 0.56 |
-| ωB97X-V/def2-QZVP | 0.01 | 0.51 | 0.73 | 9.74 |
+| ωB97X-V/def2-QZVP | 0.01 | 0.51 | 0.73 | 0.74 |
 
 
 Bond angles. Statistics in deg.
